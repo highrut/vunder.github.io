@@ -95,18 +95,15 @@ address {
 .vunder-nav-index-link {
     font-family: SamsungBold;
     font-size: 1.25rem;
-    /*color: #8E1C9A;*/
     color: #FDF6FC;
 }
 
 .vunder-nav-index-link:hover {
     color: #8E1C9A;
 }
-
 .vunder-nav-people-link {
     font-family: SamsungBold;
     font-size: 1.25rem;
-    /*color: #DB0678;*/
     color: #FDF6FC;
 }
 
@@ -117,7 +114,6 @@ address {
 .vunder-nav-pub-link {
     font-family: SamsungBold;
     font-size: 1.25rem;
-    /*color: #FF0000;*/
     color: #FDF6FC;
 }
 
@@ -128,7 +124,6 @@ address {
 .vunder-nav-contact-link {
     font-family: SamsungBold;
     font-size: 1.25rem;
-    /*color: #ffa600;*/
     color: #FDF6FC;
 }
 
@@ -332,7 +327,6 @@ nav.vunder-navbar li.active {
 }
 
 .vunder-person-title {
-    /*color: #6D3284;*/
     color: #DB0678;
     font-family: Samsung400;
     font-size: 16px;
@@ -414,7 +408,6 @@ nav.vunder-navbar li.active {
 
 .vunder-pub-heading {
     font-family: SamsungBold;
-    /*color: #ff0000;*/
 }
 
 .vunder-pub {
@@ -422,7 +415,6 @@ nav.vunder-navbar li.active {
 }
 
 .vunder-pub-title {
-    /*color: #8E1C9A;*/
     color: #FDF6FC;
     display: block;
     font-family: SamsungBold;
@@ -460,7 +452,6 @@ nav.vunder-navbar li.active {
 
 .vunder-pub-link {
     margin-right: 1rem;
-    /*color: #FDF6FC;*/
     color:  #ff0000;
     font-family: Samsung400;
 }
@@ -484,7 +475,6 @@ nav.vunder-navbar li.active {
 
 .vunder-contact-heading {
     font-family: Samsung700;
-    /*color: #ffa600;*/
     color: #FDF6FC;
 }
 
