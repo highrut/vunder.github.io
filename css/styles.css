@@ -31,7 +31,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: SamsungBold;
-    /*font-weight: bold;*/
     color: #FDF6FC;
 }
 
@@ -101,6 +100,7 @@ address {
 .vunder-nav-index-link:hover {
     color: #8E1C9A;
 }
+
 .vunder-nav-people-link {
     font-family: SamsungBold;
     font-size: 1.25rem;
@@ -290,7 +290,6 @@ nav.vunder-navbar li.active {
 
 .vunder-people-heading:first-of-type {
     font-family: Samsung700;
-    /*margin-top: 2rem;*/
     margin-bottom: 1rem;
 }
 
@@ -309,7 +308,6 @@ nav.vunder-navbar li.active {
     clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
     display: block;
     margin: 0 auto;
-    /*border: 5px solid #6D3284;*/
 }
 
 .vunder-person-info,
