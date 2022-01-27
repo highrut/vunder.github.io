@@ -7,52 +7,56 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #18061F;
+    min-height: 100vh;
 }
 
-@font-face
-{
-    font-family: Samsung400;
-    src: url("../fonts/SamsungOne-400_v1.1.ttf") format("truetype");
+main {
+    flex: 1;
 }
 
-@font-face
-{
-    font-family: Samsung700;
-    src: url("../fonts/SamsungOne-700_v1.1.ttf") format("truetype");
+footer {
+    clear: both;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
 }
 
-@font-face
-{
-    font-family: SamsungBold;
-    src: url("../fonts/SamsungSharpSans-Bold.ttf") format("truetype");
+text {
+    color: #FDF6FC;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: SamsungBold;
     color: #FDF6FC;
 }
 
-p {
-    font-family: Samsung400;
-    color: #FDF6FC;
-    font-size: 1rem;
+h1 {
+    font-family: Samsung700;
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
-h1 {
-    color: #FDF6FC;
-    font-size: 1.5rem;
+h1:not(:first-of-type) {
+    margin-top: 3em;
 }
 
 h2 {
     font-family: Samsung700;
-    font-size: 1.25rem;
+    font-size: 1.25em;
 }
 
 h3, h4, h5, h6 {
     font-family: Samsung700;
-    font-size: 1rem;
+    font-size: 1em;
+}
+
+p {
+    font-family: Samsung400;
+    color: #FDF6FC;
+    font-size: 1em;
 }
 
 a {
@@ -69,74 +73,110 @@ address {
     color: #FDF6FC;
 }
 
+#wrap {
+    min-height: 100%;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: Samsung400;
+    src: url("../fonts/SamsungOne-400_v1.1.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Samsung700;
+    src: url("../fonts/SamsungOne-700_v1.1.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: SamsungBold;
+    src: url("../fonts/SamsungSharpSans-Bold.ttf") format("truetype");
+}
+
+/* Colors */
+
+.vunder-index-color {
+    color: #8E1C9A;
+}
+
+.vunder-index-color-hover:hover {
+    color: #8E1C9A;
+}
+
+.vunder-project-color {
+    color: #E4158E;
+}
+
+.vunder-project-color-hover:hover {
+    color: #E4158E;
+}
+
+.vunder-person-color {
+    color: #FF0000;
+}
+
+.vunder-person-color-hover:hover {
+    color: #FF0000;
+}
+
+.vunder-pub-color {
+    color: #FD6631;
+}
+
+.vunder-pub-color-hover:hover {
+    color: #FD6631;
+}
+
+.vunder-contact-color {
+    color: #FFA600;
+}
+
+.vunder-contact-color-hover:hover {
+    color: #FFA600;
+}
+
+
+/* Common */
+
+.hexagon{
+    -webkit-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+    clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+    display: block;
+    margin: 0 auto;
+}
+
+/* Logo */
+
 .vunder-logo {
     font-size: 35px;
-    font-weight: bold;
-    line-height: 1.0;
     margin: 10px;
     padding: 0;
 }
 
 .vunder-logo-caption {
     font-family: Samsung400;
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size: 1em;
+    margin-bottom: 2em;
 }
 
 @media (min-width: 768px) {
     .vunder-logo {
-        font-size: 45px;
+        font-size: 35px;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-.vunder-nav-index-link {
-    font-family: SamsungBold;
-    font-size: 1.25rem;
-    color: #FDF6FC;
-}
-
-.vunder-nav-index-link:hover {
-    color: #8E1C9A;
-}
-
-.vunder-nav-people-link {
-    font-family: SamsungBold;
-    font-size: 1.25rem;
-    color: #FDF6FC;
-}
-
-.vunder-nav-people-link:hover {
-    color: #DB0678;
-}
-
-.vunder-nav-pub-link {
-    font-family: SamsungBold;
-    font-size: 1.25rem;
-    color: #FDF6FC;
-}
-
-.vunder-nav-pub-link:hover {
-    color: #FF0000;
-}
-
-.vunder-nav-contact-link {
-    font-family: SamsungBold;
-    font-size: 1.25rem;
-    color: #FDF6FC;
-}
-
-.vunder-nav-contact-link:hover {
-    color: #ffa600;
-}
+/* Navigation */
 
 nav.vunder-navbar {
     background-color: #18061F;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);*/
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0;
+    padding-bottom: 30px;
 }
 
 .vunder-navbar-top {
@@ -177,7 +217,7 @@ nav.vunder-navbar li.active {
         box-shadow: none;
     }
     nav.vunder-navbar > .navbar-collapse {
-        box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+        /*box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.2);*/
     }
     nav.vunder-navbar ul.navbar-nav {
         -ms-flex: 0 0 auto;
@@ -193,7 +233,7 @@ nav.vunder-navbar li.active {
         position: relative;
     }
     nav.vunder-navbar li.active > a::after {
-        background-color: rgba(0, 0, 0, 0.3);
+        /*background-color: rgba(0, 0, 0, 0.3);*/
         border-radius: 2px;
         content: "";
         display: block;
@@ -205,11 +245,21 @@ nav.vunder-navbar li.active {
     }
 }
 
+.vunder-nav-link {
+    font-family: Samsung700;
+    font-size: 1.25em;
+    color: #FDF6FC;
+}
+
+/* Main */
+
 .vunder-main {
-    /*background-color: #120315;*/
-    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
+    /*margin-bottom: 100px;*/
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 30px;
@@ -217,9 +267,12 @@ nav.vunder-navbar li.active {
     width: 100%;
 }
 
+/*
 .vunder-main > :last-child {
     margin-bottom: 0;
 }
+*/
+
 
 @media (min-width: 768px) {
     .vunder-main {
@@ -236,31 +289,59 @@ nav.vunder-navbar li.active {
 }
 
 .vunder-footer {
-    color: #051425;
-    font-family: Samsung400;
-    font-size: 0.8em;
+    font-family: SamsungBold;
+    color: #FDF6FC;
+    text-align: center;
+    padding: 20px;
+}
+
+.vunder-footer-copyright {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
+    height: 8em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.vunder-footer-samsung {
+    height: 1em;
+    display: inline;
+    margin-right: 5px;
+    padding-bottom: 0.1em;
+}
+
+.vunder-footer-samsung-research {
+    color: #FDF6FC;
+    font-family: SamsungBold;
+    font-size: 1em;
+    display: inline;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.vunder-footer-vunder {
+    color: #FDF6FC;
+    font-family: Samsung700;
+    font-size: 1em;
+    display: inline;
+    margin-left: 5px;
+}
+
+/* Cover */
+
+.vunder-cover-container {
     width: 100%;
+    height: 450px;
+    position: relative;
+    text-align: center;
 }
 
-@media (min-width: 768px) {
-    .vunder-footer {
-        max-width: 720px;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
+.vunder-cover-image {
+    width: 100%;
+    height: 450px;
+    float: center;
 }
 
-@media (min-width: 992px) {
-    .vunder-footer {
-        max-width: 960px;
-    }
-}
 
 /* Styles for home */
 
@@ -288,28 +369,6 @@ nav.vunder-navbar li.active {
 
 /* Styles for people */
 
-.vunder-people-heading:first-of-type {
-    font-family: Samsung700;
-    margin-bottom: 1rem;
-}
-
-.vunder-people-heading:not(:first-of-type) {
-    font-family: Samsung700;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.vunder-special-heading {
-    margin-top: 2rem;
-}
-
-.hexagon{
-    -webkit-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
-    clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
-    display: block;
-    margin: 0 auto;
-}
-
 .vunder-person-info,
 .vunder-person-name,
 .vunder-person-title,
@@ -324,8 +383,7 @@ nav.vunder-navbar li.active {
     font-size: 18px;
 }
 
-.vunder-person-title {
-    color: #DB0678;
+.vunder-job-title {
     font-family: Samsung400;
     font-size: 16px;
 }
@@ -336,18 +394,19 @@ nav.vunder-navbar li.active {
     font-size: 11px;
 }
 
-.vunder-cur-member {
+.vunder-member {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-.vunder-cur-member > a {
+.vunder-member > a {
+    text-decoration: none;
     display: block;
 }
 
-.vunder-cur-member > img,
-.vunder-cur-member > a > img {
+.vunder-member > img,
+.vunder-member > a > img {
     border-radius: 5px;
     display: block;
     height: 130px;
@@ -363,65 +422,22 @@ nav.vunder-navbar li.active {
   margin: 0 auto;
 }
 
-.vunder-prev-member,
-.vunder-prev-member > a {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    text-align: left;
-}
-.vunder-prev-member {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.vunder-prev-member > img,
-.vunder-prev-member > a > img {
-    border-radius: 4px;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    height: 100px;
-    margin-right: 10px;
-    width: 100px;
-}
-
-.vunder-prev-member > a,
-.vunder-prev-member > .vunder-person-info,
-.vunder-prev-member > a > .vunder-person-info {
-    -ms-flex: 1 0 0;
-    flex: 1 0 0;
-    max-width: 100%;
-}
-.vunder-prev-member .vunder-person-title {
-    margin-top: 5px;
-}
-
 
 /*Styles for publications */
-
-.vunder-pub-heading:not(:first-of-type) {
-    margin-top: 2rem;
-}
-
-.vunder-pub-heading {
-    font-family: SamsungBold;
-}
 
 .vunder-pub {
     margin-bottom: 10px;
 }
 
 .vunder-pub-title {
-    color: #FDF6FC;
     display: block;
     font-family: SamsungBold;
-    font-weight: bold;
+    color: #FDF6FC;
 }
 
 .vunder-pub-author {
-    color: #FDF6FC;
     font-family: Samsung400;
+    color: #FDF6FC;
 }
 
 .vunder-pub-channel::before {
@@ -432,31 +448,29 @@ nav.vunder-navbar li.active {
 
 .vunder-pub-channel {
     font-style: italic;
-    color: #FDF6FC;
     font-family: Samsung400;
+    color: #FDF6FC;
 }
 
 .vunder-pub-channel::after {
     content: ", ";
     font-style: normal;
-    color: #FDF6FC;
     font-family: Samsung400;
+    color: #FDF6FC;
 }
 
 .vunder-pub-year {
-    color: #FDF6FC;
     font-family: Samsung400;
+    color: #FDF6FC;
 }
 
 .vunder-pub-link {
-    margin-right: 1rem;
-    color:  #ff0000;
+    margin-right: 1em;
     font-family: Samsung400;
 }
 
 .vunder-pub-bibtex {
     font-family: Samsung400;
-    /*color: #FDF6FC;*/
     background-color: #eeeeee;
     border: 1px solid #cccccc;
     border-radius: 5px;
@@ -471,11 +485,158 @@ nav.vunder-navbar li.active {
     color: #ffa600;
 }
 
-.vunder-contact-heading {
+
+/* Style for projects page */
+
+.vunder-project-info,
+.vunder-project-name {
+    display: block;
+}
+
+.vunder-project-name {
+    color: #FDF6FC;
     font-family: Samsung700;
+    font-size: 18px;
+}
+
+.vunder-project {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.vunder-project > a {
+    display: inline-block;
+}
+
+.vunder-project > img,
+.vunder-project > a > img {
+    border-radius: 5px;
+    display: inline-block;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 130px;
+}
+
+.vunder-project-topic {
+    background-color: #FDF6FC;
+    font-size: 1em;
+    color: #18061F;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: -4em;
+    margin-bottom: 3em;
+    border-radius: 16px;
+}
+
+.vunder-project-cover-container {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    text-align: center;
+}
+
+.vunder-project-cover-image {
+    width: 100%;
+    height: 450px;
+    float: center;
+}
+
+.vunder-project-cover-link {
+    font-family: Samsung400;
+    font-size: 1.25em;
     color: #FDF6FC;
 }
 
-.vunder-contact-heading:not(:first-of-type) {
-    margin-top: 2rem;
+.vunder-project-cover-link-div {
+    position: absolute;
+    top: 10%;
+    left: 10em;
+    transform: translate(-90%, -90%);
+}
+
+.vunder-project-cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vunder-project-title {
+    font-family: SamsungBold;
+    font-size: 5em;
+    color: #FDF6FC;
+}
+
+.vunder-project-person-title {
+    color: #E4158E;
+    font-family: Samsung400;
+    font-size: 16px;
+}
+
+/* Styles for personal pages */
+
+.vunder-person-cover-container {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    text-align: center;
+}
+
+.vunder-person-cover-image {
+    width: 100%;
+    height: 450px;
+    float: center;
+}
+
+.vunder-person-cover-link {
+    font-family: Samsung400;
+    font-size: 1.25em;
+    color: #FDF6FC;
+}
+
+.vunder-person-cover-link-div {
+    position: absolute;
+    top: 10%;
+    left: 10em;
+    transform: translate(-90%, -90%);
+}
+
+.vunder-person-cover-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100px;
+    height: auto;
+    min-height: 100px;
+}
+
+.vunder-person-cover-photo {
+    width: 50%
+}
+
+.vunder-person-title {
+    font-family: SamsungBold;
+    font-size: 4em;
+    color: #FDF6FC;
+}
+
+.vunder-person-topic {
+    background-color: #FDF6FC;
+    font-size: 1em;
+    color: #18061F;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: -4em;
+    margin-bottom: 3em;
+    border-radius: 16px;
 }

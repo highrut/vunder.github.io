@@ -17,34 +17,53 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="vunder-logo">
-                <img class="vunder-home-cover" src="img/vunder-logo.png" alt="vunder-logo">
-                <p align=center class="vunder-logo-caption">Visual Understanding Lab @ Samsung AI Center, Moscow</p>
+                <img class="vunder-home-cover" src="img/vunder_logo.png" alt="VUNDER">
+                <!--<p align=center class="vunder-logo-caption">Visual Understanding Lab @ Samsung AI Center, Moscow</p>-->
             </div>
         </div>
         <div class="collapse navbar-collapse justify-content-center" id="primary-navbar-id">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="vunder-nav-index-link" href="index.html">About</a>
+                    <a class="vunder-nav-link vunder-index-color-hover" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="vunder-nav-link vunder-project-color-hover" href="projects.html">Projects</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="vunder-nav-people-link" href="people.html">People</a>
+                    <a class="vunder-nav-link vunder-person-color-hover" href="people.html">People</a>
                 </li>
                 <li class="nav-item">
-                    <a class="vunder-nav-pub-link" href="publications.html">Publications</a>
+                    <a class="vunder-nav-link vunder-pub-color-hover" href="publications.html">Publications</a>
                 </li>
                 <li class="nav-item">
-                    <a class="vunder-nav-contact-link" href="contact.html">Contact Us</a>
+                    <a class="vunder-nav-link vunder-contact-color-hover" href="contact.html">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
     <main class="vunder-main">
-        <p>We are interested in building engineering systems that interact intelligently with the environment. Whether for transportation (autonomous vehicles), entertainment (AR/VR) or other applications, this requires "understanding" the surrounding space, including other agents and objects within. Vision plays a key role in this process. Almost half of the primate brain is devoted to processing visual "information". So, if we are to understand how information is acquired, manipulated, and used to solve decision and control tasks, vision is a natural starting point.</p>
+        <p>We focus on 3D spatial modeling which is one of the key technologies for AR applications, robotics and computational photography. </p>
 
-        <p>But what is visual "information"? How can we acquire an "informative" representation of the physical space around us? What are the fundamental principles that the design of such a representation should abide to? Representation learning is in its infancy, and we are developing the fundamental building block to analyze and design them, as well as for using them for decision and control. We use the insight to develop new methods for perception and action, including building geometric, topological and semantic models of the scene.</p>
+        <p>The main goal of our team is the development of new visual mapping and navigation technologies. 
+        The mapping technologies will allow building a virtual representation of real indoor environments, which will enable visual-based navigation inside such environments. </p>
+        
+        <p>The navigation technologies will provide a tool for localization inside an indoor environment from visual observation, which can be used to enable indoor navigation for mobile users or navigation and planning for indoor robots. </p>
 
+
+        <p>The virtual representation of mapped environment can also be exported to a virtual simulator, and used for training and testing of vision-based methods. </p>
+
+        <p>We also work on a capturing system for geometric reconstruction of large-scale indoor environments, semantic-based recognition of the scene to produce detailed semantic map, handling transparent and reflective surfaces, visual-based localization from a mobile phone. </p>
+
+        <div align=center> <img src="img/saic_office.png" alt="Photo of the SAIC office in Moscow" width=70%> </div>
+        
     </main>
-    <footer class="vunder-footer">Copyright © 2021 Vision Understanding Lab</footer>
+    <footer class="vunder-footer">
+        <div align=center class="vunder-footer-copyright">
+        <img class="vunder-footer-samsung" src="img/samsung_logo.png" alt="SAMSUNG">
+        <p class="vunder-footer-samsung-research">|</p> <p class="vunder-footer-samsung-research">Samsung Research</p> <p class="vunder-footer-samsung-research">|</p>
+        <p class="vunder-footer-vunder">Vision Understanding Lab</p> 2022
+        </div>
+    </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
 </body></html>
