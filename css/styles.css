@@ -40,7 +40,7 @@ h1 {
 }
 
 h1:not(:first-of-type) {
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 h2 {
@@ -172,7 +172,6 @@ address {
 
 nav.vunder-navbar {
     background-color: #18061F;
-    /*box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);*/
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0;
@@ -209,7 +208,6 @@ nav.vunder-navbar li {
 }
 
 nav.vunder-navbar li.active {
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
@@ -217,7 +215,6 @@ nav.vunder-navbar li.active {
         box-shadow: none;
     }
     nav.vunder-navbar > .navbar-collapse {
-        /*box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.2);*/
     }
     nav.vunder-navbar ul.navbar-nav {
         -ms-flex: 0 0 auto;
@@ -233,7 +230,6 @@ nav.vunder-navbar li.active {
         position: relative;
     }
     nav.vunder-navbar li.active > a::after {
-        /*background-color: rgba(0, 0, 0, 0.3);*/
         border-radius: 2px;
         content: "";
         display: block;
