@@ -478,7 +478,19 @@ nav.vunder-navbar li.active {
 /* Styles from contact page */
 .vunder-contact-link {
     font-family: Samsung400;
-    color: #ffa600;
+}
+
+#vunder-saic-map {
+    width: 83%;
+    height: 500px;
+    border: 0;
+    display: inline; 
+}
+
+#vunder-saic-address {
+    width: 15%;
+    float: right;
+    display:inline;
 }
 
 
