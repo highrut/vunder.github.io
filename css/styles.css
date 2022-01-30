@@ -73,9 +73,6 @@ address {
     color: #FDF6FC;
 }
 
-#wrap {
-    min-height: 100%;
-}
 
 /* Fonts */
 
@@ -139,11 +136,24 @@ address {
 
 /* Common */
 
-.hexagon{
+.vunder-hexagon{
     -webkit-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
     clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
     display: block;
     margin: 0 auto;
+}
+
+.vunder-topic {
+    background-color: #FDF6FC;
+    font-size: 1em;
+    color: #18061F;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: -4em;
+    border-radius: 16px;
 }
 
 /* Logo */
@@ -250,7 +260,7 @@ nav.vunder-navbar li.active {
 /* Main */
 
 .vunder-main {
-    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.5);
+    /*box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.5);*/
     border-radius: 2em;
     margin-top: 0px;
     margin-left: auto;
@@ -288,13 +298,6 @@ nav.vunder-navbar li.active {
     font-family: SamsungBold;
     color: #FDF6FC;
     text-align: center;
-    padding: 20px;
-}
-
-.vunder-footer-copyright {
-    margin-left: auto;
-    margin-right: auto;
-    height: 8em;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -325,17 +328,39 @@ nav.vunder-navbar li.active {
 
 /* Cover */
 
-.vunder-cover-container {
+.vunder-cover-container,
+.vunder-cover-image {
     width: 100%;
     height: 450px;
+}
+
+.vunder-cover-container {
     position: relative;
     text-align: center;
 }
 
 .vunder-cover-image {
-    width: 100%;
-    height: 450px;
     float: center;
+}
+
+.vunder-cover-link {
+    font-family: Samsung400;
+    font-size: 1.25em;
+    color: #FDF6FC;
+}
+
+.vunder-cover-link-div {
+    position: absolute;
+    top: 10%;
+    left: 10em;
+    transform: translate(-90%, -90%);
+}
+
+.vunder-cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -367,7 +392,7 @@ nav.vunder-navbar li.active {
 
 .vunder-person-info,
 .vunder-person-name,
-.vunder-person-title,
+.vunder-person-job-title,
 .vunder-person-affil,
 .vunder-person-misc {
     display: block;
@@ -476,6 +501,7 @@ nav.vunder-navbar li.active {
 
 
 /* Styles from contact page */
+
 .vunder-contact-link {
     font-family: Samsung400;
 }
@@ -528,98 +554,16 @@ nav.vunder-navbar li.active {
     width: 130px;
 }
 
-.vunder-project-topic {
-    background-color: #FDF6FC;
-    font-size: 1em;
-    color: #18061F;
-    border: none;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: -4em;
-    margin-bottom: 3em;
-    border-radius: 16px;
-}
-
-.vunder-project-cover-container {
-    width: 100%;
-    height: 450px;
-    position: relative;
-    text-align: center;
-}
-
-.vunder-project-cover-image {
-    width: 100%;
-    height: 450px;
-    float: center;
-}
-
-.vunder-project-cover-link {
-    font-family: Samsung400;
-    font-size: 1.25em;
-    color: #FDF6FC;
-}
-
-.vunder-project-cover-link-div {
-    position: absolute;
-    top: 10%;
-    left: 10em;
-    transform: translate(-90%, -90%);
-}
-
-.vunder-project-cover-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .vunder-project-title {
     font-family: SamsungBold;
     font-size: 5em;
     color: #FDF6FC;
 }
 
-.vunder-project-person-title {
-    color: #E4158E;
-    font-family: Samsung400;
-    font-size: 16px;
-}
 
 /* Styles for personal pages */
 
-.vunder-person-cover-container {
-    width: 100%;
-    height: 450px;
-    position: relative;
-    text-align: center;
-}
-
-.vunder-person-cover-image {
-    width: 100%;
-    height: 450px;
-    float: center;
-}
-
-.vunder-person-cover-link {
-    font-family: Samsung400;
-    font-size: 1.25em;
-    color: #FDF6FC;
-}
-
-.vunder-person-cover-link-div {
-    position: absolute;
-    top: 10%;
-    left: 10em;
-    transform: translate(-90%, -90%);
-}
-
 .vunder-person-cover-info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     min-width: 100px;
     height: auto;
     min-height: 100px;
@@ -629,22 +573,32 @@ nav.vunder-navbar li.active {
     width: 50%
 }
 
-.vunder-person-title {
-    font-family: SamsungBold;
-    font-size: 4em;
+.vunder-person-cover-name,
+.vunder-person-cover-job-title,
+.vunder-person-cover-email,
+.vunder-person-text {
     color: #FDF6FC;
 }
 
-.vunder-person-topic {
-    background-color: #FDF6FC;
-    font-size: 1em;
-    color: #18061F;
-    border: none;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: -4em;
-    margin-bottom: 3em;
-    border-radius: 16px;
+.vunder-person-cover-name {
+    font-family: SamsungBold;
+    font-size: 3em;
 }
+
+.vunder-person-cover-job-title {
+    font-family: Samsung700;
+    font-size: 1.5em;
+    margin-top: -1.25em;
+}
+
+.vunder-person-cover-email {
+    font-family: Samsung400;
+    font-size: 1.25em;
+    margin-top: -0.75em;
+}
+
+.vunder-person-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
