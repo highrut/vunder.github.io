@@ -23,20 +23,17 @@
         </div>
     </div>
     <main class="vunder-main">
-        <h1 align=center></h1>
+        <h1></h1>
 
-        <p>We focus on 3D spatial modeling which is one of the key technologies for AR applications, robotics and computational photography. </p>
+        <p> Deep neural networks have become a mainstream approach to interactive segmentation. The major goal of our research is finding a proper balance of accuracy, network complexity, and resource consumption. </p>
 
-        <p>The main goal of our team is the development of new visual mapping and navigation technologies. 
-        The mapping technologies will allow building a virtual representation of real indoor environments, which will enable visual-based navigation inside such environments. </p>
-        
-        <p>The navigation technologies will provide a tool for localization inside an indoor environment from visual observation, which can be used to enable indoor navigation for mobile users or navigation and planning for indoor robots. </p>
+        <p> First, we developed <text class="vunder-project-color bold"> AdaptIS (Adaptive Instance Selection) network for class-agnostic instance segmentation </text>. Given an input image and a point, it generates a mask for the object located at this point using AdaIN layers. AdaptIS can be easily combined with standard semantic segmentation pipeline to perform panoptic segmentation. AdaptIS sets a new state-of-the-art on Cityscapes and Mapillary, and shows competitive results on a challenging COCO dataset. </p>
 
-        <p>The virtual representation of mapped environment can also be exported to a virtual simulator, and used for training and testing of vision-based methods. </p>
+        <p> Aiming for faster inference, we proposed <text class="vunder-project-color bold"> f-BRS (feature backpropagating refinement scheme) </text> that solves an optimization problem with respect to auxiliary variables instead of the network inputs, and requires running forward and backward pass just for a small part of a network. Experiments on GrabCut, Berkeley, DAVIS and SBD datasets set new state-of-the-art at an order of magnitude lower time per click compared to the original BRS. </p>
 
-        <p>We also work on a capturing system for geometric reconstruction of large-scale indoor environments, semantic-based recognition of the scene to produce detailed semantic map, handling transparent and reflective surfaces, visual-based localization from a mobile phone. </p>
+        <p> However, inference-time optimization schemes are considerably more computationally expensive compared to feedforward approaches since they require performing backward passes through a network during inference. Moreover, they are difficult to deploy on mobile frameworks that usually support only forward passes. So, we proposed a <text class="vunder-project-color bold"> simple feedforward model for click-based interactive segmentation </text> that employs the segmentation masks from previous steps. It allows not only to segment an entirely new object, but also to start with an external mask and correct it. </p>
 
-        <h1 align=center> People </h1>
+        <h1> People </h1>
 
         <div class="row no-gutters">
             <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
@@ -70,7 +67,7 @@
             </div>
         </div>
 
-        <h1 align=center> Publications </h1>
+        <h1> Publications </h1>
 
         <div class="vunder-pub" id="pub-reviving2021-id">
             <span class="vunder-pub-title">Reviving Iterative Training with Mask Guidance for Interactive Segmentation</span>

@@ -91,6 +91,10 @@ address {
     src: url("../fonts/SamsungSharpSans-Bold.ttf") format("truetype");
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* Colors */
 
 .vunder-index-color {
@@ -155,6 +159,7 @@ address {
     margin-top: -4em;
     border-radius: 16px;
 }
+
 
 /* Logo */
 
@@ -257,6 +262,7 @@ nav.vunder-navbar li.active {
     color: #FDF6FC;
 }
 
+
 /* Main */
 
 .vunder-main {
@@ -271,14 +277,8 @@ nav.vunder-navbar li.active {
     padding-left: 30px;
     padding-right: 30px;
     width: 100%;
+    text-align: center;
 }
-
-/*
-.vunder-main > :last-child {
-    margin-bottom: 0;
-}
-*/
-
 
 @media (min-width: 768px) {
     .vunder-main {
@@ -294,6 +294,9 @@ nav.vunder-navbar li.active {
     }
 }
 
+
+/* Footer */
+
 .vunder-footer {
     font-family: SamsungBold;
     color: #FDF6FC;
@@ -302,29 +305,30 @@ nav.vunder-navbar li.active {
     padding-bottom: 20px;
 }
 
-.vunder-footer-samsung {
-    height: 1em;
+.vunder-footer-samsung,
+.vunder-footer-samsung-research,
+.vunder-footer-vunder {
     display: inline;
     margin-right: 5px;
+    margin-left: 5px;
+    color: #FDF6FC;
+}
+
+.vunder-footer-samsung {
+    height: 1em;
     padding-bottom: 0.1em;
 }
 
 .vunder-footer-samsung-research {
-    color: #FDF6FC;
     font-family: SamsungBold;
     font-size: 1em;
-    display: inline;
-    margin-right: 5px;
-    margin-left: 5px;
 }
 
 .vunder-footer-vunder {
-    color: #FDF6FC;
     font-family: Samsung700;
     font-size: 1em;
-    display: inline;
-    margin-left: 5px;
 }
+
 
 /* Cover */
 
@@ -388,6 +392,11 @@ nav.vunder-navbar li.active {
     }
 }
 
+#vunder-office {
+    float: center;
+}
+
+
 /* Styles for people */
 
 .vunder-person-info,
@@ -437,12 +446,6 @@ nav.vunder-navbar li.active {
     width: 130px;
 }
 
-.vunder-profile {
-  @include hexagon(192px);
-  display: block;
-  margin: 0 auto;
-}
-
 
 /*Styles for publications */
 
@@ -450,15 +453,24 @@ nav.vunder-navbar li.active {
     margin-bottom: 10px;
 }
 
-.vunder-pub-title {
-    display: block;
-    font-family: SamsungBold;
+.vunder-pub-title,
+.vunder-pub-author,
+.vunder-pub-channel,
+.vunder-pub-year {
     color: #FDF6FC;
 }
 
-.vunder-pub-author {
+.vunder-pub-author,
+.vunder-pub-channel,
+.vunder-pub-year,
+.vunder-pub-link,
+.vunder-pub-bibtex {
     font-family: Samsung400;
-    color: #FDF6FC;
+}
+
+.vunder-pub-title {
+    display: block;
+    font-family: SamsungBold;
 }
 
 .vunder-pub-channel::before {
@@ -469,20 +481,11 @@ nav.vunder-navbar li.active {
 
 .vunder-pub-channel {
     font-style: italic;
-    font-family: Samsung400;
-    color: #FDF6FC;
 }
 
 .vunder-pub-channel::after {
     content: ", ";
     font-style: normal;
-    font-family: Samsung400;
-    color: #FDF6FC;
-}
-
-.vunder-pub-year {
-    font-family: Samsung400;
-    color: #FDF6FC;
 }
 
 .vunder-pub-link {
@@ -491,7 +494,6 @@ nav.vunder-navbar li.active {
 }
 
 .vunder-pub-bibtex {
-    font-family: Samsung400;
     background-color: #eeeeee;
     border: 1px solid #cccccc;
     border-radius: 5px;
