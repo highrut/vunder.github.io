@@ -97,6 +97,10 @@ address {
 
 /* Colors */
 
+.vunder-text-color {
+    color: #FDF6FC;
+}
+
 .vunder-index-color {
     color: #8E1C9A;
 }
@@ -222,9 +226,6 @@ nav.vunder-navbar li {
     padding-left: 15px;
 }
 
-nav.vunder-navbar li.active {
-}
-
 @media (min-width: 768px) {
     nav.vunder-navbar {
         box-shadow: none;
@@ -259,7 +260,6 @@ nav.vunder-navbar li.active {
 .vunder-nav-link {
     font-family: Samsung700;
     font-size: 1.25em;
-    color: #FDF6FC;
 }
 
 
