@@ -299,10 +299,10 @@ nav.vunder-navbar li {
 
 .vunder-footer {
     font-family: SamsungBold;
-    color: #FDF6FC;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #FDF6FC;
 }
 
 .vunder-footer-samsung,
@@ -530,9 +530,9 @@ nav.vunder-navbar li {
 }
 
 .vunder-project-name {
-    color: #FDF6FC;
     font-family: Samsung700;
-    font-size: 18px;
+    font-size: 1.25em;
+    color: #FDF6FC;
 }
 
 .vunder-project {
@@ -547,13 +547,12 @@ nav.vunder-navbar li {
 
 .vunder-project > img,
 .vunder-project > a > img {
-    border-radius: 5px;
     display: inline-block;
-    height: 130px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
-    width: 130px;
+    height: 180px;
+    width: 180px;
 }
 
 .vunder-project-title {
