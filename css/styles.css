@@ -531,7 +531,7 @@ nav.vunder-navbar li {
 
 .vunder-project-name {
     font-family: Samsung700;
-    font-size: 1.25em;
+    font-size: 18px;
     color: #FDF6FC;
 }
 
@@ -551,8 +551,8 @@ nav.vunder-navbar li {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
 }
 
 .vunder-project-title {
