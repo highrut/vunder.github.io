@@ -561,6 +561,30 @@ nav.vunder-navbar li {
     color: #FDF6FC;
 }
 
+#vunder-spatial-ai {
+    background: linear-gradient(45deg, #601DE4, #FF12AC);
+}
+
+#vunder-interactive-segmentation {
+    background: linear-gradient(45deg, #CC2491, #FF0000);
+}
+
+#vunder-3d-object-detection {
+    background: radial-gradient(#00DDFF, #3E0074);
+}
+
+#vunder-3d-assets {
+    background: linear-gradient(0deg, #FFCC00, #601DE4);
+}
+
+#vunder-image-harmonization {
+    background: linear-gradient(45deg, #FF12AC, #FFCC00);
+}
+
+#vunder-2d-object-detection {
+    background: linear-gradient(90deg, #900012, #FF5900);
+}
+
 
 /* Styles for personal pages */
 
