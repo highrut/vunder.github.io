@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en" class="h-100"><head>
+    <title>VUNDER Lab</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="VUNDER Lab Webpage">
+    <meta name="keywords" content="SAIC Moscow,VUNDER,Computer Vision">
+    <meta name="author" content="Anna Vorontsova">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body class="h-100">
+    <div class="vunder-cover-container">
+        <img class="vunder-cover-image" src="../img/covers/visual_odometry.jpg" alt="Visual Odometry project cover"> </img>
+        <div class="vunder-cover-link-div"> <a class="vunder-cover-link" href="../projects.html"> Back to projects </a> </div> 
+        <div class="vunder-cover-text"> 
+            <p class="vunder-project-title"> Visual Odometry</p>
+            <br>
+            <p class="vunder-topic"> #visual_odometry </p>
+            <p class="vunder-topic"> #trajectory_estimation </p>
+            <p class="vunder-topic"> #visual_SLAM </p>
+        </div>
+    </div>
+    <main class="vunder-main">
+        <h1></h1>
+
+        <p> Simultaneous localization and mapping (SLAM) is an essential component of robotic systems. However, some aspects, features and design choices of the existing visual odometry/SLAM systems are controversial. In this project, we measure the robustness of the visual SLAM, discuss input modalities for the visual SLAM, and investigate alternative approaches for training a deep SLAM.</p>
+
+        <p> Widely-used visual SLAM methods demonstrate impressive accuracy, but the reported experiments are usually conducted on just a few sequences, that makes it difficult to reason about the robustness of the methods. To investigate this, we extensively evaluate popular ORBSLAM2 on the publicly available datasets for RGB-D SLAM, perform statistical analysis of the results and find correlations between the metrics and the attributes of the trajectories. </p>
+
+        <p>Next, we discuss the input data commonly used for visual odometry / SLAM; namely, optical flow and depth maps. We reformulate the problem of ego-motion estimation as a problem of motion estimation of a 3D-scene with respect to a static camera. Using optical flow and depth, we estimate a motion of each visible point in a scene in terms of 6DoF and represent results in the form of <text class="vunder-project-color">motion maps </text>, each one addressing single degree of freedom. We show that training on a motion maps allows for better results than naive stacking of depth and optical flow in both indoor and outdoor scenarios. </p>
+
+        <p> Furthermore, we propose <text class="vunder-project-color">a novel network architecture that efficiently exploits motion maps and outperforms the existing learnable RGB/RGB-D baselines. </text> </p>
+
+        <p>Collecting ground truth poses might be a bottleneck for developing a deep SLAM system. This could be addressed with unsupervised training, but there is still a large gap between the performance of unsupervised and supervised methods. We propose <text class="vunder-project-color">generating synthetic data for optical flow-based trainable visual odometry and SLAM methods</text>. We generate training samples in a form of optical flow between a real frame and a virtual frame using sensor-measured/stereo-reconstructed depth maps. We demonstrate that both the synthetically-trained visual odometry model and the proposed SLAM method build upon this model yields state-of-the-art results among unsupervised methods on KITTI and show promising results on challenging EuRoC. </p>
+
+        <h1> People </h1>
+
+        <div class="row no-gutters">
+            <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+            <div class="col-6 col-sm-4 col-lg-3 vunder-member">
+                <img class=vunder-hexagon src="../img/people/anna_vorontsova.jpeg" alt="Photo of Anna Vorontsova">
+                <span class="vunder-person-info">
+                    <span class="vunder-person-name">Anna Vorontsova</span>
+                    <span class="vunder-job-title vunder-project-color">Engineer</span>
+                </span>
+            </div>
+        </div>
+
+        <h1> Publications </h1>
+
+        <div class="vunder-pub" id="pub-slinko2019training-id">
+            <span class="vunder-pub-title">Training Deep SLAM on Single Frames</span>
+            <span class="vunder-pub-author">Igor Slinko, Anna Vorontsova, Dmitry Zhukov, Olga Barinova, Anton Konushin.</span>
+            <span class="vunder-pub-channel">ArXiv</span>
+            <span class="vunder-pub-year">2019</span>
+            <div class="vunder-pub-link-group">
+                <a class="vunder-pub-link vunder-project-color" href="https://arxiv.org/abs/1912.05405">PDF</a>
+                <a class="vunder-pub-link vunder-project-color" href="https://github.com/saic-vul/odometry">Code</a>
+                <a class="vunder-pub-link vunder-project-color" aria-controls="bib-slinko2019training-id" aria-expanded="false" data-toggle="collapse" href="#bib-slinko2019training-id">BibTeX</a>
+            </div>
+            <pre class="collapse vunder-pub-bibtex" id="slinko2019training-id"> 
+                @misc{slinko2019training,
+                  title={Training Deep SLAM on Single Frames}, 
+                  author={Igor Slinko and Anna Vorontsova and Dmitry Zhukov and Olga Barinova and Anton Konushin},
+                  year={2019},
+                  eprint={1912.05405},
+                  archivePrefix={arXiv},
+                  primaryClass={cs.CV}
+                }
+            </pre>
+        </div>
+
+        <div class="vunder-pub" id="pub-slinko2019scene-id">
+            <span class="vunder-pub-title">Scene Motion Decomposition for Learnable Visual Odometry</span>
+            <span class="vunder-pub-author">Igor Slinko, Anna Vorontsova, Filipp Konokhov, Olga Barinova, Anton Konushin.</span>
+            <span class="vunder-pub-channel">Proc. of the Visual Odometry Workshop associated with the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) </span>
+            <span class="vunder-pub-year">2019</span>
+            <div class="vunder-pub-link-group">
+                <a class="vunder-pub-link vunder-project-color" href="https://arxiv.org/abs/1907.07227">PDF</a>
+                <a class="vunder-pub-link vunder-project-color" href="https://github.com/saic-vul/odometry">Code</a>
+                <a class="vunder-pub-link vunder-project-color" aria-controls="bib-slinko2019scene-id" aria-expanded="false" data-toggle="collapse" href="#bib-slinko2019scene-id">BibTeX</a>
+            </div>
+            <pre class="collapse vunder-pub-bibtex" id="slinko2019scene-id"> 
+                @misc{slinko2019scene,
+                  title={Scene Motion Decomposition for Learnable Visual Odometry}, 
+                  author={Igor Slinko and Anna Vorontsova and Filipp Konokhov and Olga Barinova and Anton Konushin},
+                  year={2019},
+                  eprint={1907.07227},
+                  archivePrefix={arXiv},
+                  primaryClass={cs.CV}
+                }
+            </pre>
+        </div>
+
+        <div class="vunder-pub" id="pub-prokhorov2019measuring-id">
+            <span class="vunder-pub-title">Measuring Robustness of Visual SLAM</span>
+            <span class="vunder-pub-author">David Prokhorov, Dmitry Zhukov, Olga Barinova, Anna Vorontsova, Anton Konushin.</span>
+            <span class="vunder-pub-channel">Proc. of the Machine Vision Applications Conference (MVA) </span>
+            <span class="vunder-pub-year">2019</span>
+            <div class="vunder-pub-link-group">
+                <a class="vunder-pub-link vunder-project-color" href="https://arxiv.org/abs/1910.04755">PDF</a>
+                <a class="vunder-pub-link vunder-project-color" aria-controls="bib-prokhorov2019measuring-id" aria-expanded="false" data-toggle="collapse" href="#bib-prokhorov2019measuring-id">BibTeX</a>
+            </div>
+            <pre class="collapse vunder-pub-bibtex" id="prokhorov2019measuring-id"> 
+                @misc{prokhorov2019measuring,
+                  title={Measuring robustness of Visual SLAM}, 
+                  author={David Prokhorov and Dmitry Zhukov and Olga Barinova and Anna Vorontsova and Anton Konushin},
+                  year={2019},
+                  eprint={1910.04755},
+                  archivePrefix={arXiv},
+                  primaryClass={cs.CV}
+                }
+            </pre>
+        </div>
+
+    </main>
+    <footer class="vunder-footer">
+        <img class="vunder-footer-samsung" src="../img/samsung_logo.png" alt="SAMSUNG">
+        <p class="vunder-footer-samsung-research">|</p> <p class="vunder-footer-samsung-research">Samsung Research</p> <p class="vunder-footer-samsung-research">|</p>
+        <p class="vunder-footer-vunder">Vision Understanding Lab 2022 </p>
+    </footer>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+</body></html>
