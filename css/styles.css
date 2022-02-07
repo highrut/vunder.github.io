@@ -581,8 +581,16 @@ nav.vunder-navbar li {
     background: linear-gradient(45deg, #FF12AC, #FFCC00);
 }
 
+#vunder-depth-estimation {
+    background: linear-gradient(90deg, #FFCC00, #00DDFF);
+}
+
 #vunder-2d-object-detection {
-    background: linear-gradient(90deg, #900012, #FF5900);
+    background: linear-gradient(135deg, #0073FF, #37FF00);
+}
+
+#vunder-visual-odometry {
+    background: linear-gradient(90deg, #0073FF, #FF0000);
 }
 
 
