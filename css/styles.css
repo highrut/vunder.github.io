@@ -154,7 +154,7 @@ address {
 .vunder-topic {
     background-color: #FDF6FC;
     font-size: 1em;
-    color: #18061F;
+    color: #1f0824;
     border: none;
     padding: 5px 10px;
     text-align: center;
@@ -190,7 +190,7 @@ address {
 /* Navigation */
 
 nav.vunder-navbar {
-    background-color: #18061F;
+    background-color: #1f0824;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0;
