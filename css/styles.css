@@ -232,7 +232,7 @@ a:hover {
     margin-right: auto;
     float: center;
     margin-bottom: 20px;
-    max-width: 500px;
+    max-width: 400px;
     /* Workaround for an IE bug:
     * https://stackoverflow.com/questions/8673356/ie-doesnt-support-height-auto-for-images-what-should-i-use
     */
@@ -242,16 +242,16 @@ a:hover {
 
 @media (min-width: 992px) {
     .saic-logo-image {
-        margin-left: 10px;
-        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 10px;
     }
 }
 
 .mml-logo,
 .vunder-logo {
-    height: 150px;
-    margin: 10px;
+    float: center;
+    margin: 20px;
     padding: 0;
 }
 
@@ -420,7 +420,7 @@ nav.saic-navbar li {
 .saic-cover-container,
 .saic-cover-image {
     width: 100%;
-    height: auto;
+    height: 500px;
 }
 
 .saic-cover-container {
@@ -446,47 +446,33 @@ nav.saic-navbar li {
 }
 
 .saic-h1 {
+    display: block;
     font-size: 2.5em;
 }
 
 .saic-lab-title {
-    height: 100px;
     margin-bottom: 30px;
     font-family: Samsung700;
     font-size: 1.5em;
 }
 
-.saic-vunder-block,
-.saic-mml-block {
+.saic-lab {
     margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-bottom: 100px;
-    width: 45%;
     display: inline-block;
 }
 
-.saic-vunder-block {
-    float: left;
-}
-
-.saic-mml-block {
-    float: right;
-}
-
-.saic-vunder-logo,
-.saic-mml-logo {
-    height: 200px;
-    margin-bottom: 50px;
+.saic-lab-logo {
+    margin-bottom: 100px;
     margin: 10px;
-    padding: 0;
+    padding: 20px;
 }
 
 @media (min-width: 768px) {
-    .saic-vunder-logo,
-    .saic-mml-logo {
+    .saic-lab-logo {
         margin-left: auto;
         margin-right: auto;
+        padding: 10px;
     }
 }
 
