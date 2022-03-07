@@ -9,7 +9,6 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #1f0824;
     min-height: 100vh;
 }
 
@@ -24,13 +23,8 @@ footer {
     width: 100%;
 }
 
-text {
-    color: #FDF6FC;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: SamsungBold;
-    color: #FDF6FC;
 }
 
 h1 {
@@ -53,26 +47,14 @@ h3, h4, h5, h6 {
     font-size: 1em;
 }
 
-p {
+p, a, address {
     font-family: Samsung400;
-    color: #FDF6FC;
     font-size: 1em;
 }
 
-a {
-    font-family: Samsung400;
-    color: #6D3284;
-}
-
 a:hover {
-    color: #FDF6FC;
+    text-decoration: none;
 }
-
-address {
-    font-family: Samsung400;
-    color: #FDF6FC;
-}
-
 
 /* Fonts */
 
@@ -97,8 +79,25 @@ address {
 
 /* Colors */
 
+
+.saic-background-color {
+    background-color: #ffffff;
+}
+
+.saic-text-color {
+    color: #000000;
+}
+
+.vunder-background-color {
+    background-color: #18061F;
+}
+
 .vunder-text-color {
     color: #FDF6FC;
+}
+
+.vunder-text-color:hover {
+    text-decoration: none;
 }
 
 .vunder-index-color {
@@ -121,6 +120,10 @@ address {
     color: #F7310A;
 }
 
+.vunder-pub-color:hover {
+    color: #FDF6FC;
+}
+
 .vunder-pub-color-hover:hover {
     color: #F7310A;
 }
@@ -133,20 +136,74 @@ address {
     color: #FFA600;
 }
 
+.mml-background-color {
+    background-color: #000000;
+}
+
+.mml-text-color {
+    color: #FFFFFF;
+}
+
+.mml-text-color-hover:hover {
+    color: #14CA00;
+    text-decoration: none;
+}
+
+.mml-index-color {
+    color: #14CA00;
+}
+
+.mml-index-color-hover:hover {
+    color: #14CA00;
+}
+
+.mml-project-color {
+    color: #14CA00;
+}
+
+.mml-project-color-hover:hover {
+    color: #14CA00;
+}
+
+.mml-pub-color {
+    color: #14CA00;
+}
+
+.mml-pub-color:hover {
+    color: #FFFFFF;
+}
+
+.mml-pub-color-hover:hover {
+    color: #14CA00;
+}
+
+.mml-contact-color {
+    color: #14CA00;
+}
+
+.mml-contact-color-hover:hover {
+    color: #14CA00;
+}
+
 
 /* Common */
 
-.vunder-hexagon{
-    -webkit-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
-    clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+.vunder-project-icon,
+.mml-project-icon {
     display: block;
     margin: 0 auto;
 }
 
-.vunder-topic {
-    background-color: #FDF6FC;
+
+.vunder-project-icon {
+    -webkit-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+    clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+}
+
+.saic-topic,
+.vunder-topic,
+.mml-topic {
     font-size: 1em;
-    color: #1f0824;
     border: none;
     padding: 5px 10px;
     text-align: center;
@@ -156,80 +213,117 @@ address {
     border-radius: 16px;
 }
 
+.vunder-topic {
+    background-color: #FDF6FC;
+    color: #18061F;
+}
+
+.mml-topic {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
 
 /* Logo */
 
+.saic-logo-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+    margin-bottom: 20px;
+    max-width: 500px;
+    /* Workaround for an IE bug:
+    * https://stackoverflow.com/questions/8673356/ie-doesnt-support-height-auto-for-images-what-should-i-use
+    */
+    min-height: 1px;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .saic-logo-image {
+        margin-left: 10px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.mml-logo,
 .vunder-logo {
-    font-size: 35px;
+    height: 150px;
     margin: 10px;
     padding: 0;
 }
 
-.vunder-logo-caption {
-    font-family: Samsung400;
-    font-size: 1em;
-    margin-bottom: 2em;
+.mml-logo {
+    margin-bottom: 70px;
+    margin-top: 0px;
+}
+
+.vunder-logo {
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 @media (min-width: 768px) {
-    .vunder-logo {
-        font-size: 35px;
+    .vunder-logo,
+    .mml-logo {
         margin-left: auto;
         margin-right: auto;
     }
 }
 
+
 /* Navigation */
 
-nav.vunder-navbar {
-    background-color: #1f0824;
+nav.saic-navbar {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0;
     padding-bottom: 30px;
 }
 
-.vunder-navbar-top {
+.saic-navbar-top {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
 
-nav.vunder-navbar > .vunder-navbar-top,
-nav.vunder-navbar > .navbar-collapse {
+nav.saic-navbar > .saic-navbar-top,
+nav.saic-navbar > .navbar-collapse {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-nav.vunder-navbar button.navbar-toggler {
+nav.saic-navbar button.navbar-toggler {
     margin: 10px 0 10px 15px;
 }
 
-nav.vunder-navbar ul.navbar-nav {
+nav.saic-navbar ul.navbar-nav {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-nav.vunder-navbar li {
+nav.saic-navbar li {
     font-weight: bold;
     padding-left: 15px;
 }
 
 @media (min-width: 768px) {
-    nav.vunder-navbar {
+    nav.saic-navbar {
         box-shadow: none;
     }
-    nav.vunder-navbar > .navbar-collapse {
+    nav.saic-navbar > .navbar-collapse {
     }
-    nav.vunder-navbar ul.navbar-nav {
+    nav.saic-navbar ul.navbar-nav {
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
         max-width: auto;
     }
-    nav.vunder-navbar li {
+    nav.saic-navbar li {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -237,7 +331,7 @@ nav.vunder-navbar li {
         background-color: transparent;
         position: relative;
     }
-    nav.vunder-navbar li.active > a::after {
+    nav.saic-navbar li.active > a::after {
         border-radius: 2px;
         content: "";
         display: block;
@@ -249,7 +343,7 @@ nav.vunder-navbar li {
     }
 }
 
-.vunder-nav-link {
+.saic-nav-link {
     font-family: Samsung700;
     font-size: 1.25em;
 }
@@ -257,13 +351,11 @@ nav.vunder-navbar li {
 
 /* Main */
 
-.vunder-main {
-    /*box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.5);*/
+.saic-main {
     border-radius: 2em;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    /*margin-bottom: 100px;*/
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 30px;
@@ -273,7 +365,7 @@ nav.vunder-navbar li {
 }
 
 @media (min-width: 768px) {
-    .vunder-main {
+    .saic-main {
         max-width: 720px;
         padding-left: 60px;
         padding-right: 60px;
@@ -281,7 +373,7 @@ nav.vunder-navbar li {
 }
 
 @media (min-width: 992px) {
-    .vunder-main {
+    .saic-main {
         max-width: 960px;
     }
 }
@@ -289,203 +381,220 @@ nav.vunder-navbar li {
 
 /* Footer */
 
-.vunder-footer {
+.saic-footer {
     font-family: SamsungBold;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #FDF6FC;
 }
 
-.vunder-footer-samsung,
-.vunder-footer-samsung-research,
-.vunder-footer-vunder {
+.saic-footer-samsung,
+.saic-footer-samsung-research,
+.saic-footer-lab {
     display: inline;
     margin-right: 5px;
     margin-left: 5px;
-    color: #FDF6FC;
 }
 
-.vunder-footer-samsung {
-    height: 1em;
+.saic-footer-samsung {
+    height: 0.9em;
     padding-bottom: 0.1em;
 }
 
-.vunder-footer-samsung-research {
+.saic-footer-samsung-research,
+.saic-footer-lab {
+    font-size: 1em;
+}
+
+.saic-footer-samsung-research  {
     font-family: SamsungBold;
-    font-size: 1em;
 }
 
-.vunder-footer-vunder {
+.saic-footer-lab {
     font-family: Samsung700;
-    font-size: 1em;
 }
 
 
-/* Cover */
+/* Styles for home */
 
-.vunder-cover-container,
-.vunder-cover-image {
+.saic-cover-container,
+.saic-cover-image {
     width: 100%;
-    height: 600px;
+    height: auto;
 }
 
-.vunder-cover-container {
+.saic-cover-container {
     position: relative;
     text-align: center;
 }
 
-.vunder-cover-image {
+.saic-cover-image {
     float: center;
 }
 
-.vunder-cover-link {
-    font-family: Samsung400;
-    font-size: 1.25em;
-    color: #FDF6FC;
-}
-
-.vunder-cover-link-div {
-    position: absolute;
-    top: 10%;
-    left: 10em;
-    transform: translate(-90%, -90%);
-}
-
-.vunder-cover-text {
+.saic-cover-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-
-/* Styles for home */
-
-.vunder-home-cover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    max-width: 500px;
-    /* Workaround for an IE bug:
-    * https://stackoverflow.com/questions/8673356/ie-doesnt-support-height-auto-for-images-what-should-i-use
-    */
-    min-height: 1px;
-    width: 100%;
+.saic-title {
+    font-family: SamsungBold;
+    font-size: 5em;
+    color: #ffffff;
 }
 
-@media (min-width: 992px) {
-    .vunder-home-cover {
-        float: right;
-        margin-left: 10px;
-        margin-right: 0;
-        margin-bottom: 10px;
+.saic-h1 {
+    font-size: 2.5em;
+}
+
+.saic-lab-title {
+    height: 100px;
+    margin-bottom: 30px;
+    font-family: Samsung700;
+    font-size: 1.5em;
+}
+
+.saic-vunder-block,
+.saic-mml-block {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    width: 45%;
+    display: inline-block;
+}
+
+.saic-vunder-block {
+    float: left;
+}
+
+.saic-mml-block {
+    float: right;
+}
+
+.saic-vunder-logo,
+.saic-mml-logo {
+    height: 200px;
+    margin-bottom: 50px;
+    margin: 10px;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .saic-vunder-logo,
+    .saic-mml-logo {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-#vunder-office {
+.saic-vunder-link div,
+.saic-mml-link div {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.saic-vunder-link,
+.saic-mml-link {
+    margin-top: 50px;
+    font-family: Samsung700;
+    font-size: 1.25em;
+}
+
+.saic-vunder-link {
+    color: #18061F;
+}
+
+.saic-vunder-link:hover {
+    color: #18061F;
+}
+
+.saic-mml-link {
+    color: #000000;
+}
+
+.saic-mml-link:hover {
+    color: #000000;
+}
+
+.saic-topic {
+    background-color: #0051A0;
+    color: #FFFFFF;
+}
+
+.saic-arrow {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  border: solid #0051A0;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+#saic-office {
     float: center;
 }
 
-
-/* Styles for people */
-
-.vunder-person-info,
-.vunder-person-name,
-.vunder-person-job-title,
-.vunder-person-affil,
-.vunder-person-misc {
-    display: block;
-}
-
-.vunder-person-name {
-    color: #FDF6FC;
-    font-family: Samsung700;
-    font-size: 18px;
-}
-
-.vunder-job-title {
+.saic-contact-link {
     font-family: Samsung400;
-    font-size: 16px;
 }
 
-.vunder-person-affil,
-.vunder-person-misc {
-    font-family: Samsung400;
-    font-size: 11px;
+#saic-office-map {
+    width: 83%;
+    height: 500px;
+    border: 0;
+    display: inline; 
 }
 
-.vunder-member {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.vunder-member > a {
-    text-decoration: none;
-    display: block;
-}
-
-.vunder-member > img,
-.vunder-member > a > img {
-    border-radius: 5px;
-    display: block;
-    height: 130px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-    width: 130px;
+#saic-office-address {
+    width: 15%;
+    float: right;
+    display:inline;
 }
 
 
 /*Styles for publications */
 
-.vunder-pub {
+.saic-pub {
     margin-bottom: 10px;
 }
 
-.vunder-pub-title,
-.vunder-pub-author,
-.vunder-pub-channel,
-.vunder-pub-year {
-    color: #FDF6FC;
-}
-
-.vunder-pub-author,
-.vunder-pub-channel,
-.vunder-pub-year,
-.vunder-pub-link,
-.vunder-pub-bibtex {
+.saic-pub-author,
+.saic-pub-channel,
+.saic-pub-year,
+.saic-pub-link,
+.saic-pub-bibtex {
     font-family: Samsung400;
 }
 
-.vunder-pub-title {
+.saic-pub-title {
     display: block;
     font-family: SamsungBold;
 }
 
-.vunder-pub-channel::before {
+.saic-pub-channel::before {
     content: "In ";
     font-style: normal;
     font-family: Samsung400;
 }
 
-.vunder-pub-channel {
+.saic-pub-channel {
     font-style: italic;
 }
 
-.vunder-pub-channel::after {
+.saic-pub-channel::after {
     content: ", ";
     font-style: normal;
 }
 
-.vunder-pub-link {
+.saic-pub-link {
     margin-right: 1em;
     font-family: Samsung400;
 }
 
-.vunder-pub-bibtex {
+.saic-pub-bibtex {
     background-color: #eeeeee;
     border: 1px solid #cccccc;
     border-radius: 5px;
@@ -494,51 +603,83 @@ nav.vunder-navbar li {
 }
 
 
-/* Styles from contact page */
+/* Styles for contact page */
 
-.vunder-contact-link {
-    font-family: Samsung400;
-}
 
-#vunder-saic-map {
-    width: 83%;
-    height: 500px;
-    border: 0;
-    display: inline; 
-}
-
-#vunder-saic-address {
-    width: 15%;
-    float: right;
-    display:inline;
-}
 
 
 /* Style for projects page */
 
-.vunder-project-info,
-.vunder-project-name {
-    display: block;
+.saic-project-cover-container,
+.saic-project-cover-image {
+    width: 100%;
+    height: 600px;
 }
 
-.vunder-project-name {
-    font-family: Samsung700;
-    font-size: 18px;
+.saic-project-cover-container {
+    position: relative;
+    text-align: center;
+}
+
+.saic-project-cover-image {
+    float: center;
+}
+
+.saic-vunder-project-cover-link,
+.saic-mml-project-cover-link {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    transform: translate(-90%, -90%);
+    font-family: Samsung400;
+    font-size: 1.25em;
+}
+
+.saic-vunder-project-cover-link {
     color: #FDF6FC;
 }
 
-.vunder-project {
+.saic-vunder-project-cover-link:hover {
+    color: #FDF6FC;
+}
+
+.saic-mml-project-cover-link {
+    color: #FFFFFF;
+}
+
+.saic-mml-project-cover-link:hover {
+    color: #FFFFFF;
+}
+
+.saic-project-cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.saic-project-info,
+.saic-project-name {
+    display: block;
+}
+
+.saic-project-name {
+    font-family: Samsung700;
+    font-size: 18px;
+}
+
+.saic-project {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-.vunder-project > a {
+.saic-project > a {
     display: inline-block;
 }
 
-.vunder-project > img,
-.vunder-project > a > img {
+.saic-project > img,
+.saic-project > a > img {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -547,10 +688,9 @@ nav.vunder-navbar li {
     width: 140px;
 }
 
-.vunder-project-title {
+.saic-project-title {
     font-family: SamsungBold;
     font-size: 4em;
-    color: #FDF6FC;
 }
 
 #vunder-spatial-ai {
@@ -585,45 +725,66 @@ nav.vunder-navbar li {
     background: linear-gradient(90deg, #0073FF, #FF0000);
 }
 
-
-/* Styles for personal pages */
-
-.vunder-person-cover-info {
-    min-width: 100px;
-    height: auto;
-    min-height: 100px;
+#mml-spatial-ai {
+    background: transparent;
 }
 
-.vunder-person-cover-photo {
-    width: 50%
+#mml-spatial-ai:hover {
+    background: radial-gradient(#14CA00, #14CA00, transparent, transparent);
 }
 
-.vunder-person-cover-name,
-.vunder-person-cover-job-title,
-.vunder-person-cover-email,
-.vunder-person-text {
-    color: #FDF6FC;
+#mml-interactive-segmentation {
+    background: transparent;
 }
 
-.vunder-person-cover-name {
-    font-family: SamsungBold;
-    font-size: 3em;
+#mml-interactive-segmentation:hover {
+    background: radial-gradient(#14CA00, #14CA00, transparent, transparent);
 }
 
-.vunder-person-cover-job-title {
-    font-family: Samsung700;
-    font-size: 1.5em;
-    margin-top: -1.25em;
+#mml-3d-object-detection {
+    background: transparent;
 }
 
-.vunder-person-cover-email {
-    font-family: Samsung400;
-    font-size: 1.25em;
-    margin-top: -0.75em;
+#mml-3d-object-detection:hover {
+    background: radial-gradient(#14CA00, #14CA00, transparent, transparent);
 }
 
-.vunder-person-text {
-    margin-top: 30px;
-    margin-bottom: 30px;
+#mml-3d-assets {
+    background: transparent;
 }
 
+#mml-3d-assets:hover {
+    background: radial-gradient(#14CA00, #14CA00, transparent, transparent);
+}
+
+#mml-image-harmonization {
+    background: transparent;
+}
+
+#mml-image-harmonization:hover {
+    background: radial-gradient(#14CA00, #14CA00, transparent, transparent);
+}
+
+#mml-depth-estimation {
+    background: transparent;
+}
+
+#mml-depth-estimation:hover {
+    background: radial-gradient(#14CA00, #14CA00, transparent, transparent);
+}
+
+#mml-2d-object-detection {
+    background: transparent;
+}
+
+#mml-2d-object-detection:hover {
+    background: radial-gradient(#14CA00, #14CA00, transparent, transparent);
+}
+
+#mml-visual-odometry {
+    background: transparent;
+}
+
+#mml-visual-odometry:hover {
+    background: radial-gradient(#14CA00, #14CA00, transparent, transparent);
+}
