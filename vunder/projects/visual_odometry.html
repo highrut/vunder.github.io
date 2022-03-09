@@ -10,30 +10,29 @@
     <link rel="stylesheet" type="text/css" href="../../css/styles.css">
 </head>
 
-<body class="h-100 vunder-background-color vunder-text-color">
-    <div class="saic-project-cover">
-        <img class="saic-project-cover" src="../../img/vunder/covers/visual_odometry.png" alt=""> </img>
-        <div class="saic-project-cover-link"> <a class="saic-project-cover-link vunder-project-cover-link" href="../projects.html"> Back to projects </a> </div> 
+<body class="h-100 saic-background saic-text">
+    <div class="saic-cover">
+        <img class="saic-cover" src="../../img/vunder/covers/visual_odometry.png" alt=""> </img>
         <div class="saic-project-title"> 
             <p class="saic-project-title"> Visual Odometry</p>
             <br>
-            <p class="vunder-topic"> #visual_odometry </p>
-            <p class="vunder-topic"> #trajectory_estimation </p>
-            <p class="vunder-topic"> #visual_SLAM </p>
+            <p class="saic-project-topic"> #visual_odometry </p>
+            <p class="saic-project-topic"> #trajectory_estimation </p>
+            <p class="saic-project-topic"> #visual_SLAM </p>
         </div>
     </div>
-    <main class="saic-main vunder-background-color vunder-text-color">
+    <main class="saic-main">
         <h1></h1>
 
         <p> Simultaneous localization and mapping (SLAM) is an essential component of robotic systems. However, some aspects, features and design choices of the existing visual odometry/SLAM systems are controversial. In this project, we measure the robustness of the visual SLAM, discuss input modalities for the visual SLAM, and investigate alternative approaches for training a deep SLAM.</p>
 
         <p> Widely-used visual SLAM methods demonstrate impressive accuracy, but the reported experiments are usually conducted on just a few sequences, that makes it difficult to reason about the robustness of the methods. To investigate this, we extensively evaluate popular ORBSLAM2 on the publicly available datasets for RGB-D SLAM, perform statistical analysis of the results and find correlations between the metrics and the attributes of the trajectories. </p>
 
-        <p>Next, we discuss the input data commonly used for visual odometry / SLAM; namely, optical flow and depth maps. We reformulate the problem of ego-motion estimation as a problem of motion estimation of a 3D-scene with respect to a static camera. Using optical flow and depth, we estimate a motion of each visible point in a scene in terms of 6DoF and represent results in the form of <text class="vunder-project-color">motion maps </text>, each one addressing single degree of freedom. We show that training on a motion maps allows for better results than naive stacking of depth and optical flow in both indoor and outdoor scenarios. </p>
+        <p>Next, we discuss the input data commonly used for visual odometry / SLAM; namely, optical flow and depth maps. We reformulate the problem of ego-motion estimation as a problem of motion estimation of a 3D-scene with respect to a static camera. Using optical flow and depth, we estimate a motion of each visible point in a scene in terms of 6DoF and represent results in the form of <text class="saic-colored-text">motion maps </text>, each one addressing single degree of freedom. We show that training on a motion maps allows for better results than naive stacking of depth and optical flow in both indoor and outdoor scenarios. </p>
 
-        <p> Furthermore, we propose <text class="vunder-project-color">a novel network architecture that efficiently exploits motion maps and outperforms the existing learnable RGB/RGB-D baselines. </text> </p>
+        <p> Furthermore, we propose <text class="saic-colored-text">a novel network architecture that efficiently exploits motion maps and outperforms the existing learnable RGB/RGB-D baselines. </text> </p>
 
-        <p>Collecting ground truth poses might be a bottleneck for developing a deep SLAM system. This could be addressed with unsupervised training, but there is still a large gap between the performance of unsupervised and supervised methods. We propose <text class="vunder-project-color">generating synthetic data for optical flow-based trainable visual odometry and SLAM methods</text>. We generate training samples in a form of optical flow between a real frame and a virtual frame using sensor-measured/stereo-reconstructed depth maps. We demonstrate that both the synthetically-trained visual odometry model and the proposed SLAM method build upon this model yields state-of-the-art results among unsupervised methods on KITTI and show promising results on challenging EuRoC. </p>
+        <p>Collecting ground truth poses might be a bottleneck for developing a deep SLAM system. This could be addressed with unsupervised training, but there is still a large gap between the performance of unsupervised and supervised methods. We propose <text class="saic-colored-text">generating synthetic data for optical flow-based trainable visual odometry and SLAM methods</text>. We generate training samples in a form of optical flow between a real frame and a virtual frame using sensor-measured/stereo-reconstructed depth maps. We demonstrate that both the synthetically-trained visual odometry model and the proposed SLAM method build upon this model yields state-of-the-art results among unsupervised methods on KITTI and show promising results on challenging EuRoC. </p>
 
         <h1> Publications </h1>
 
@@ -43,9 +42,9 @@
             <span class="saic-pub-channel">ArXiv</span>
             <span class="saic-pub-year">2019</span>
             <div class="saic-pub-link-group">
-                <a class="saic-pub-link vunder-project-color" href="https://arxiv.org/abs/1912.05405">PDF</a>
-                <a class="saic-pub-link vunder-project-color" href="https://github.com/saic-vul/odometry">Code</a>
-                <a class="saic-pub-link vunder-project-color" aria-controls="bib-slinko2019training-id" aria-expanded="false" data-toggle="collapse" href="#bib-slinko2019training-id">BibTeX</a>
+                <a class="saic-pub-link saic-colored-text" href="https://arxiv.org/abs/1912.05405">PDF</a>
+                <a class="saic-pub-link saic-colored-text" href="https://github.com/saic-vul/odometry">Code</a>
+                <a class="saic-pub-link saic-colored-text" aria-controls="bib-slinko2019training-id" aria-expanded="false" data-toggle="collapse" href="#bib-slinko2019training-id">BibTeX</a>
             </div>
             <pre class="collapse saic-pub-bibtex" id="bib-slinko2019training-id">
                 @misc{slinko2019training,
@@ -65,9 +64,9 @@
             <span class="saic-pub-channel">Proc. of the Visual Odometry Workshop associated with the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) </span>
             <span class="saic-pub-year">2019</span>
             <div class="saic-pub-link-group">
-                <a class="saic-pub-link vunder-project-color" href="https://arxiv.org/abs/1907.07227">PDF</a>
-                <a class="saic-pub-link vunder-project-color" href="https://github.com/saic-vul/odometry">Code</a>
-                <a class="saic-pub-link vunder-project-color" aria-controls="bib-slinko2019scene-id" aria-expanded="false" data-toggle="collapse" href="#bib-slinko2019scene-id">BibTeX</a>
+                <a class="saic-pub-link saic-colored-text" href="https://arxiv.org/abs/1907.07227">PDF</a>
+                <a class="saic-pub-link saic-colored-text" href="https://github.com/saic-vul/odometry">Code</a>
+                <a class="saic-pub-link saic-colored-text" aria-controls="bib-slinko2019scene-id" aria-expanded="false" data-toggle="collapse" href="#bib-slinko2019scene-id">BibTeX</a>
             </div>
             <pre class="collapse saic-pub-bibtex" id="bib-slinko2019scene-id">
                 @misc{slinko2019scene,
@@ -87,8 +86,8 @@
             <span class="saic-pub-channel">Proc. of the Machine Vision Applications Conference (MVA) </span>
             <span class="saic-pub-year">2019</span>
             <div class="saic-pub-link-group">
-                <a class="saic-pub-link vunder-project-color" href="https://arxiv.org/abs/1910.04755">PDF</a>
-                <a class="saic-pub-link vunder-project-color" aria-controls="bib-prokhorov2019measuring-id" aria-expanded="false" data-toggle="collapse" href="#bib-prokhorov2019measuring-id">BibTeX</a>
+                <a class="saic-pub-link saic-colored-text" href="https://arxiv.org/abs/1910.04755">PDF</a>
+                <a class="saic-pub-link saic-colored-text" aria-controls="bib-prokhorov2019measuring-id" aria-expanded="false" data-toggle="collapse" href="#bib-prokhorov2019measuring-id">BibTeX</a>
             </div>
             <pre class="collapse saic-pub-bibtex" id="bib-prokhorov2019measuring-id">
                 @misc{prokhorov2019measuring,
@@ -103,7 +102,7 @@
         </div>
 
     </main>
-    <footer class="saic-footer vunder-background-color vunder-text-color">
+    <footer class="saic-footer">
         <img class="saic-footer-samsung" src="../../img/samsung_logo.png" alt="SAMSUNG">
         <p class="saic-footer-samsung-research">|</p> <p class="saic-footer-samsung-research">Samsung Research</p> <p class="saic-footer-samsung-research">|</p>
         <p class="saic-footer-lab">Vision Understanding Lab 2022 </p>

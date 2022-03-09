@@ -10,25 +10,24 @@
     <link rel="stylesheet" type="text/css" href="../../css/styles.css">
 </head>
 
-<body class="h-100 vunder-background-color vunder-text-color">
-    <div class="saic-project-cover">
-        <img class="saic-project-cover" src="../../img/vunder/covers/3d_object_detection.png" alt=""> </img>
-        <div class="saic-project-cover-link"> <a class="saic-project-cover-link vunder-project-cover-link" href="../projects.html"> Back to projects </a> </div> 
+<body class="h-100 saic-background saic-text">
+    <div class="saic-cover">
+        <img class="saic-cover" src="../../img/vunder/covers/3d_object_detection.png" alt=""> </img>
         <div class="saic-project-title"> 
             <p class="saic-project-title"> 3D Object Detection</p>
             <br>
-            <p class="vunder-topic"> #3d_object_detection </p>
-            <p class="vunder-topic"> #scene_understanding </p>
+            <p class="saic-project-topic"> #3d_object_detection </p>
+            <p class="saic-project-topic"> #scene_understanding </p>
         </div>
     </div>
-    <main class="saic-main vunder-background-color vunder-text-color">
+    <main class="saic-main">
         <h1></h1>
 
         <p> Recently, promising applications in robotics and augmented reality have attracted considerable attention to 3D object detection from both RGB images and point clouds. </p>
 
-        <p> In visual-based object detection, we were the first to formulate the task of multi-view 3D object detection as an end-to-end optimization problem. We propose <text class="vunder-project-color bold"> ImVoxelNet, a novel fully convolutional method of 3D object detection based on monocular or multi-view RGB images. </text> The number of monocular images in each multi-view input can variate during training and inference; actually, this number might be unique for each multi-view input. ImVoxelNet successfully handles both indoor and outdoor scenes, which makes it general-purpose. Specifically, it achieves state-of-the-art results in car detection on KITTI (monocular) and nuScenes (multi-view) benchmarks among all methods that accept RGB images. Moreover, it surpasses existing RGB-based 3D object detection methods on the SUN RGB-D dataset. On ScanNet, ImVoxelNet sets a new benchmark for multi-view 3D object detection. </p>
+        <p> In visual-based object detection, we were the first to formulate the task of multi-view 3D object detection as an end-to-end optimization problem. We propose <text class="saic-colored-text bold"> ImVoxelNet, a novel fully convolutional method of 3D object detection based on monocular or multi-view RGB images. </text> The number of monocular images in each multi-view input can variate during training and inference; actually, this number might be unique for each multi-view input. ImVoxelNet successfully handles both indoor and outdoor scenes, which makes it general-purpose. Specifically, it achieves state-of-the-art results in car detection on KITTI (monocular) and nuScenes (multi-view) benchmarks among all methods that accept RGB images. Moreover, it surpasses existing RGB-based 3D object detection methods on the SUN RGB-D dataset. On ScanNet, ImVoxelNet sets a new benchmark for multi-view 3D object detection. </p>
 
-        <p> To handle point clouds, we presented <text class="vunder-project-color bold"> FCAF3D, a first-in-class fully convolutional anchor-free indoor 3D object detection method </text>. It is a simple yet effective method that uses a voxel representation of a point cloud and processes voxels with sparse convolutions. FCAF3D can handle large-scale scenes with minimal runtime through a single fully convolutional feedforward pass. Existing 3D object detection methods make prior assumptions on the geometry of objects, and we argue that it limits their generalization ability. To get rid of any prior assumptions, we propose a novel parametrization of oriented bounding boxes that allows obtaining better results in a purely data-driven way. The proposed method achieves state-of-the-art results on ScanNet, SUN RGB-D, and S3DIS datasets. </p>
+        <p> To handle point clouds, we presented <text class="saic-colored-text bold"> FCAF3D, a first-in-class fully convolutional anchor-free indoor 3D object detection method </text>. It is a simple yet effective method that uses a voxel representation of a point cloud and processes voxels with sparse convolutions. FCAF3D can handle large-scale scenes with minimal runtime through a single fully convolutional feedforward pass. Existing 3D object detection methods make prior assumptions on the geometry of objects, and we argue that it limits their generalization ability. To get rid of any prior assumptions, we propose a novel parametrization of oriented bounding boxes that allows obtaining better results in a purely data-driven way. The proposed method achieves state-of-the-art results on ScanNet, SUN RGB-D, and S3DIS datasets. </p>
 
         <h1> Publications </h1>
 
@@ -38,9 +37,9 @@
             <span class="saic-pub-channel">ArXiv</span>
             <span class="saic-pub-year">2021</span>
             <div class="saic-pub-link-group">
-                <a class="saic-pub-link vunder-project-color" href="https://arxiv.org/abs/2112.00322">PDF</a>
-                <a class="saic-pub-link vunder-project-color" href="https://github.com/SamsungLabs/fcaf3d">Code</a>
-                <a class="saic-pub-link vunder-project-color" aria-controls="bib-rukhovich2021fcaf3d" aria-expanded="false" data-toggle="collapse" href="#bib-rukhovich2021fcaf3d-id">BibTeX</a>
+                <a class="saic-pub-link saic-colored-text" href="https://arxiv.org/abs/2112.00322">PDF</a>
+                <a class="saic-pub-link saic-colored-text" href="https://github.com/SamsungLabs/fcaf3d">Code</a>
+                <a class="saic-pub-link saic-colored-text" aria-controls="bib-rukhovich2021fcaf3d" aria-expanded="false" data-toggle="collapse" href="#bib-rukhovich2021fcaf3d-id">BibTeX</a>
             </div>
             <pre class="collapse saic-pub-bibtex" id="bib-rukhovich2021fcaf3d-id">
                 @article{rukhovich2021fcaf3d,
@@ -58,9 +57,9 @@
             <span class="saic-pub-channel">Proc. of the IEEE Winter Conference on Applications of Computer Vision (WACV)</span>
             <span class="saic-pub-year">2022</span>
             <div class="saic-pub-link-group">
-                <a class="saic-pub-link vunder-project-color" href="https://arxiv.org/abs/2106.01178">PDF</a>
-                <a class="saic-pub-link vunder-project-color" href="https://github.com/saic-vul/imvoxelnet">Code</a>
-                <a class="saic-pub-link vunder-project-color" aria-controls="bib-rukhovich2022imvoxelnet-id" aria-expanded="false" data-toggle="collapse" href="#bib-rukhovich2022imvoxelnet-id">BibTeX</a>
+                <a class="saic-pub-link saic-colored-text" href="https://arxiv.org/abs/2106.01178">PDF</a>
+                <a class="saic-pub-link saic-colored-text" href="https://github.com/saic-vul/imvoxelnet">Code</a>
+                <a class="saic-pub-link saic-colored-text" aria-controls="bib-rukhovich2022imvoxelnet-id" aria-expanded="false" data-toggle="collapse" href="#bib-rukhovich2022imvoxelnet-id">BibTeX</a>
             </div>
             <pre class="collapse saic-pub-bibtex" id="bib-rukhovich2022imvoxelnet-id">
                 @inproceedings{rukhovich2022imvoxelnet,
@@ -74,7 +73,7 @@
         </div>
 
     </main>
-    <footer class="saic-footer vunder-background-color vunder-text-color">
+    <footer class="saic-footer">
         <img class="saic-footer-samsung" src="../../img/samsung_logo.png" alt="SAMSUNG">
         <p class="saic-footer-samsung-research">|</p> <p class="saic-footer-samsung-research">Samsung Research</p> <p class="saic-footer-samsung-research">|</p>
         <p class="saic-footer-lab">Vision Understanding Lab 2022 </p>

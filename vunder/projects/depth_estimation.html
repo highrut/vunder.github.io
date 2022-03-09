@@ -10,42 +10,41 @@
     <link rel="stylesheet" type="text/css" href="../../css/styles.css">
 </head>
 
-<body class="h-100 vunder-background-color vunder-text-color">
-    <div class="saic-project-cover">
-        <img class="saic-project-cover" src="../../img/vunder/covers/depth_estimation.png" alt=""> </img>
-        <div class="saic-project-cover-link"> <a class="saic-project-cover-link vunder-project-cover-link" href="../projects.html"> Back to projects </a> </div> 
+<body class="h-100 saic-background saic-text">
+    <div class="saic-cover">
+        <img class="saic-cover" src="../../img/vunder/covers/depth_estimation.png" alt=""> </img>
         <div class="saic-project-title"> 
             <p class="saic-project-title"> Depth Estimation / Depth Completion </p>
             <br>
-            <p class="vunder-topic"> #depth_estimation </p>
-            <p class="vunder-topic"> #depth_completion </p>
+            <p class="saic-project-topic"> #depth_estimation </p>
+            <p class="saic-project-topic"> #depth_completion </p>
         </div>
     </div>
-    <main class="saic-main vunder-background-color vunder-text-color">
+    <main class="saic-main">
         <h1></h1>
 
         <p> Nowadays, robotics, AR, and 3D modeling applications attract considerable attention to single-view depth estimation (SVDE) as it allows estimating scene geometry from a single RGB image. Recent works have demonstrated that the accuracy of an SVDE method hugely depends on the diversity and volume of the training data. However, RGB-D datasets obtained via depth capturing or 3D reconstruction are typically small, synthetic datasets are not photorealistic enough, and all these datasets lack diversity. The large-scale and diverse data can be sourced from stereo images or stereo videos from the web. Typically being uncalibrated, stereo data provides disparities up to unknown shift (geometrically incomplete data), so stereo-trained SVDE methods cannot recover 3D geometry.</p> 
 
-        <p> We propose <text class="vunder-project-color">GP2, General-Purpose and Geometry-Preserving training scheme</text>, and show that conventional SVDE models can learn correct shifts themselves without any post-processing, benefiting from using stereo data even in the geometry-preserving setting. Through experiments on different dataset mixtures, we prove that GP2-trained models outperform competitors in both accuracy and speed, and report the state-of-the-art results in the general-purpose geometry-preserving SVDE. Moreover, we show that SVDE models can learn to predict geometrically correct depth even when geometrically complete data comprises the minor part of the training set.</p>
+        <p> We propose <text class="saic-colored-text">GP2, General-Purpose and Geometry-Preserving training scheme</text>, and show that conventional SVDE models can learn correct shifts themselves without any post-processing, benefiting from using stereo data even in the geometry-preserving setting. Through experiments on different dataset mixtures, we prove that GP2-trained models outperform competitors in both accuracy and speed, and report the state-of-the-art results in the general-purpose geometry-preserving SVDE. Moreover, we show that SVDE models can learn to predict geometrically correct depth even when geometrically complete data comprises the minor part of the training set.</p>
 
-        <p>Depth completion recovers a dense depth map from sensor measurements. Time-of-Flight (ToF) or structured light sensors provide semi-dense maps, with dense measurements in some regions and almost empty in others. We propose <text class="vunder-project-color">a new model that processes the density information with a new decoder modulation branch constructed of SPADE blocks </text>. Our model achieves the state-of-the-art results on indoor Matterport3D and shows competitive results against LiDAR-oriented approaches on KITTI.
+        <p>Depth completion recovers a dense depth map from sensor measurements. Time-of-Flight (ToF) or structured light sensors provide semi-dense maps, with dense measurements in some regions and almost empty in others. We propose <text class="saic-colored-text">a new model that processes the density information with a new decoder modulation branch constructed of SPADE blocks </text>. Our model achieves the state-of-the-art results on indoor Matterport3D and shows competitive results against LiDAR-oriented approaches on KITTI.
         </p>
         
-        <p>We also describe <text class="vunder-project-color">a novel training strategy of training on a semi-dense sensor data when the ground truth depth map is not available</text>. This strategy significantly improves prediction quality with no dense ground truth available on NYUv2. </p>
+        <p>We also describe <text class="saic-colored-text">a novel training strategy of training on a semi-dense sensor data when the ground truth depth map is not available</text>. This strategy significantly improves prediction quality with no dense ground truth available on NYUv2. </p>
 
         <h1> Publications </h1>
 
-        <div class="vunder-pub" id="pub-senushkin2020decoder-id">
-            <span class="vunder-pub-title">Decoder Modulation for Indoor Depth Completion</span>
-            <span class="vunder-pub-author">Dmitry Senushkin, Ilia Belikov, Anton Konushin.</span>
-            <span class="vunder-pub-channel">Proc. of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</span>
-            <span class="vunder-pub-year">2021</span>
-            <div class="vunder-pub-link-group">
-                <a class="vunder-pub-link vunder-project-color" href="https://arxiv.org/abs/2005.08607">PDF</a>
-                <a class="vunder-pub-link vunder-project-color" href="https://github.com/saic-vul/saic_depth_completion">Code</a>
-                <a class="vunder-pub-link vunder-project-color" aria-controls="bib-senushkin2020decoder-id" aria-expanded="false" data-toggle="collapse" href="#bib-senushkin2020decoder-id">BibTeX</a>
+        <div class="saic-pub" id="pub-senushkin2020decoder-id">
+            <span class="saic-pub-title">Decoder Modulation for Indoor Depth Completion</span>
+            <span class="saic-pub-author">Dmitry Senushkin, Ilia Belikov, Anton Konushin.</span>
+            <span class="saic-pub-channel">Proc. of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</span>
+            <span class="saic-pub-year">2021</span>
+            <div class="saic-pub-link-group">
+                <a class="saic-pub-link saic-colored-text" href="https://arxiv.org/abs/2005.08607">PDF</a>
+                <a class="saic-pub-link saic-colored-text" href="https://github.com/saic-vul/saic_depth_completion">Code</a>
+                <a class="saic-pub-link saic-colored-text" aria-controls="bib-senushkin2020decoder-id" aria-expanded="false" data-toggle="collapse" href="#bib-senushkin2020decoder-id">BibTeX</a>
             </div>
-            <pre class="collapse vunder-pub-bibtex" id="bib-senushkin2020decoder-id">
+            <pre class="collapse saic-pub-bibtex" id="bib-senushkin2020decoder-id">
                 @inproceedings{senushkin2020decoder,
                     title={Decoder modulation for indoor depth completion},
                     author={Senushkin, Dmitry and Romanov, Mikhail and Belikov, Ilia and Patakin, Nikolay and Konushin, Anton},
@@ -57,17 +56,17 @@
             </pre>
         </div>
 
-        <div class="vunder-pub" id="pub-romanov2021general-id">
-            <span class="vunder-pub-title">Towards General Purpose Geometry-Preserving Single-View Depth Estimation.</span>
-            <span class="vunder-pub-author">Mikhail Romanov, Nikolay Patatkin, Anna Vorontsova, Sergey Nikolenko, Anton Konushin, Dmitry Senyushkin.</span>
-            <span class="vunder-pub-channel">ArXiv</span>
-            <span class="vunder-pub-year">2021</span>
-            <div class="vunder-pub-link-group">
-                <a class="vunder-pub-link vunder-project-color" href="https://arxiv.org/abs/2009.12419">PDF</a>
-                <a class="vunder-pub-link vunder-project-color" href="https://github.com/saic-vul/geometry-preserving-de">Code</a>
-                <a class="vunder-pub-link vunder-project-color" aria-controls="bib-romanov2021general-id" aria-expanded="false" data-toggle="collapse" href="#bib-romanov2021general-id">BibTeX</a>
+        <div class="saic-pub" id="pub-romanov2021general-id">
+            <span class="saic-pub-title">Towards General Purpose Geometry-Preserving Single-View Depth Estimation.</span>
+            <span class="saic-pub-author">Mikhail Romanov, Nikolay Patatkin, Anna Vorontsova, Sergey Nikolenko, Anton Konushin, Dmitry Senyushkin.</span>
+            <span class="saic-pub-channel">ArXiv</span>
+            <span class="saic-pub-year">2021</span>
+            <div class="saic-pub-link-group">
+                <a class="saic-pub-link saic-colored-text" href="https://arxiv.org/abs/2009.12419">PDF</a>
+                <a class="saic-pub-link saic-colored-text" href="https://github.com/saic-vul/geometry-preserving-de">Code</a>
+                <a class="saic-pub-link saic-colored-text" aria-controls="bib-romanov2021general-id" aria-expanded="false" data-toggle="collapse" href="#bib-romanov2021general-id">BibTeX</a>
             </div>
-            <pre class="collapse vunder-pub-bibtex" id="bib-romanov2021general-id">
+            <pre class="collapse saic-pub-bibtex" id="bib-romanov2021general-id">
                 @misc{romanov2021general,
                   title={Towards General Purpose Geometry-Preserving Single-View Depth Estimation}, 
                   author={Mikhail Romanov and Nikolay Patatkin and Anna Vorontsova and Sergey Nikolenko and Anton Konushin and Dmitry Senyushkin},
@@ -80,7 +79,7 @@
         </div>
 
     </main>
-    <footer class="saic-footer vunder-background-color vunder-text-color">
+    <footer class="saic-footer">
         <img class="saic-footer-samsung" src="../../img/samsung_logo.png" alt="SAMSUNG">
         <p class="saic-footer-samsung-research">|</p> <p class="saic-footer-samsung-research">Samsung Research</p> <p class="saic-footer-samsung-research">|</p>
         <p class="saic-footer-lab">Vision Understanding Lab 2022 </p>

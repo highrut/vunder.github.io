@@ -10,22 +10,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/styles.css">
 </head>
 
-<body class="h-100 vunder-background-color vunder-text-color">
-    <div class="saic-project-cover">
-        <img class="saic-project-cover" src="../../img/vunder/covers/2d_object_detection.png" alt=""> </img>
-        <div class="saic-project-cover-link"> <a class="saic-project-cover-link vunder-project-cover-link" href="../projects.html"> Back to projects </a> </div> 
+<body class="h-100 saic-background saic-text">
+    <div class="saic-cover">
+        <img class="saic-cover" src="../../img/vunder/covers/2d_object_detection.png" alt=""> </img>
         <div class="saic-project-title"> 
             <p class="saic-project-title"> 2D Object Detection</p>
             <br>
-            <p class="vunder-topic"> #2d_object_detection </p>
+            <p class="saic-project-topic"> #2d_object_detection </p>
         </div>
     </div>
-    <main class="saic-main vunder-background-color vunder-text-color">
+    <main class="saic-main">
         <h1></h1>
 
         <p>Deep learning-based detectors usually produce a redundant set of object bounding boxes, including many duplicate detections of the same object. These boxes are then filtered using non-maximum suppression (NMS) to select exactly one bounding box per object of interest. This greedy scheme is simple and provides sufficient accuracy for isolated objects but often fails in crowded environments: one must preserve boxes for different objects and suppress duplicate detections at the same time. </p> 
 
-        <p> We developed <text class="vunder-project-color bold"> Iterdet, an iterative object detection scheme </text> where a new subset of objects is detected at each iteration. Detected boxes from the previous iterations are passed to the network at the following iterations to ensure that the same object would not be detected twice. This iterative scheme can be applied to both one-stage and two-stage object detectors with just minor training and inference modifications. We perform extensive experiments with two different baseline detectors on four datasets and show significant improvement over the baseline, leading to state-of-the-art performance on CrowdHuman and WiderPerson datasets. </p>
+        <p> We developed <text class="saic-colored-text bold"> Iterdet, an iterative object detection scheme </text> where a new subset of objects is detected at each iteration. Detected boxes from the previous iterations are passed to the network at the following iterations to ensure that the same object would not be detected twice. This iterative scheme can be applied to both one-stage and two-stage object detectors with just minor training and inference modifications. We perform extensive experiments with two different baseline detectors on four datasets and show significant improvement over the baseline, leading to state-of-the-art performance on CrowdHuman and WiderPerson datasets. </p>
 
         <h1> Publications </h1>
 
@@ -35,9 +34,9 @@
             <span class="saic-pub-channel">Proc. of the Structural, Syntactic, and Statistical Pattern Recognition: Joint IAPR International Workshops (S+ SSPR)</span>
             <span class="saic-pub-year">2020</span>
             <div class="saic-pub-link-group">
-                <a class="saic-pub-link vunder-project-color" href="https://arxiv.org/abs/2005.05708">PDF</a>
-                <a class="saic-pub-link vunder-project-color" href="https://github.com/saic-vul/iterdet">Code</a>
-                <a class="saic-pub-link vunder-project-color" aria-controls="bib-rukhovich2021iterdet-id" aria-expanded="false" data-toggle="collapse" href="#bib-rukhovich2021iterdet-id">BibTeX</a>
+                <a class="saic-pub-link saic-colored-text" href="https://arxiv.org/abs/2005.05708">PDF</a>
+                <a class="saic-pub-link saic-colored-text" href="https://github.com/saic-vul/iterdet">Code</a>
+                <a class="saic-pub-link saic-colored-text" aria-controls="bib-rukhovich2021iterdet-id" aria-expanded="false" data-toggle="collapse" href="#bib-rukhovich2021iterdet-id">BibTeX</a>
             </div>
             <pre class="collapse saic-pub-bibtex" id="bib-rukhovich2021iterdet-id">
                 @inproceedings{rukhovich2021iterdet,
@@ -51,7 +50,7 @@
         </div>
 
     </main>
-    <footer class="saic-footer vunder-background-color vunder-text-color">
+    <footer class="saic-footer">
         <img class="saic-footer-samsung" src="../../img/samsung_logo.png" alt="SAMSUNG">
         <p class="saic-footer-samsung-research">|</p> <p class="saic-footer-samsung-research">Samsung Research</p> <p class="saic-footer-samsung-research">|</p>
         <p class="saic-footer-lab">Vision Understanding Lab 2022 </p>

@@ -10,28 +10,27 @@
     <link rel="stylesheet" type="text/css" href="../../css/styles.css">
 </head>
 
-<body class="h-100 vunder-background-color vunder-text-color">
-    <div class="saic-project-cover">
-        <img class="saic-project-cover" src="../../img/vunder/covers/interactive_segmentation.gif" alt=""> </img>
-        <div class="saic-project-cover-link"> <a class="saic-project-cover-link vunder-project-cover-link" href="../projects.html"> Back to projects </a> </div> 
+<body class="h-100 saic-background saic-text">
+    <div class="saic-cover">
+        <img class="saic-cover" src="../../img/vunder/covers/interactive_segmentation.gif" alt=""> </img>
         <div class="saic-project-title"> 
             <p class="saic-project-title"> Interactive Segmentation</p>
             <br>
-            <p class="vunder-topic"> #semantic_segmentation </p>
-            <p class="vunder-topic"> #panoptic_segmentation </p>
-            <p class="vunder-topic"> #interactive_segmentation </p>
+            <p class="saic-project-topic"> #semantic_segmentation </p>
+            <p class="saic-project-topic"> #panoptic_segmentation </p>
+            <p class="saic-project-topic"> #interactive_segmentation </p>
         </div>
     </div>
-    <main class="saic-main vunder-background-color vunder-text-color">
+    <main class="saic-main">
         <h1></h1>
 
         <p> Deep neural networks have become a mainstream approach to interactive segmentation. The major goal of our research is finding a proper balance of accuracy, network complexity, and resource consumption. </p>
 
-        <p> First, we developed <text class="vunder-project-color bold"> AdaptIS (Adaptive Instance Selection) network for class-agnostic instance segmentation </text>. <br> Given an input image and a point, it generates a mask for the object located at this point using AdaIN layers. AdaptIS can be easily combined with standard semantic segmentation pipeline to perform panoptic segmentation. AdaptIS sets a new state-of-the-art on Cityscapes and Mapillary, and shows competitive results on a challenging COCO dataset. </p>
+        <p> First, we developed <text class="saic-colored-text bold"> AdaptIS (Adaptive Instance Selection) network for class-agnostic instance segmentation </text>. <br> Given an input image and a point, it generates a mask for the object located at this point using AdaIN layers. AdaptIS can be easily combined with standard semantic segmentation pipeline to perform panoptic segmentation. AdaptIS sets a new state-of-the-art on Cityscapes and Mapillary, and shows competitive results on a challenging COCO dataset. </p>
 
-        <p> Aiming for faster inference, we proposed <text class="vunder-project-color bold"> f-BRS (feature backpropagating refinement scheme) </text> that solves an optimization problem with respect to auxiliary variables instead of the network inputs, and requires running forward and backward pass just for a small part of a network. Experiments on GrabCut, Berkeley, DAVIS and SBD datasets set new state-of-the-art at an order of magnitude lower time per click compared to the original BRS. </p>
+        <p> Aiming for faster inference, we proposed <text class="saic-colored-text bold"> f-BRS (feature backpropagating refinement scheme) </text> that solves an optimization problem with respect to auxiliary variables instead of the network inputs, and requires running forward and backward pass just for a small part of a network. Experiments on GrabCut, Berkeley, DAVIS and SBD datasets set new state-of-the-art at an order of magnitude lower time per click compared to the original BRS. </p>
 
-        <p> Lately, we proposed a <text class="vunder-project-color bold"> simple feedforward model for click-based interactive segmentation </text> that employs the segmentation masks from previous steps. It allows not only to segment an entirely new object, but also to start with an external mask and correct it. </p>
+        <p> Lately, we proposed a <text class="saic-colored-text bold"> simple feedforward model for click-based interactive segmentation </text> that employs the segmentation masks from previous steps. It allows not only to segment an entirely new object, but also to start with an external mask and correct it. </p>
 
         <h1> Publications </h1>
 
@@ -41,9 +40,9 @@
             <span class="saic-pub-channel">ArXiv</span>
             <span class="saic-pub-year">2021</span>
             <div class="saic-pub-link-group">
-                <a class="saic-pub-link vunder-project-color" href="https://arxiv.org/abs/2102.06583">PDF</a>
-                <a class="saic-pub-link vunder-project-color" href="https://github.com/saic-vul/ritm_interactive_segmentation">Code</a>
-                <a class="saic-pub-link vunder-project-color" aria-controls="bib-sofiiuk2021reviving-id" aria-expanded="false" data-toggle="collapse" href="#bib-sofiiuk2021reviving-id">BibTeX</a>
+                <a class="saic-pub-link saic-colored-text" href="https://arxiv.org/abs/2102.06583">PDF</a>
+                <a class="saic-pub-link saic-colored-text" href="https://github.com/saic-vul/ritm_interactive_segmentation">Code</a>
+                <a class="saic-pub-link saic-colored-text" aria-controls="bib-sofiiuk2021reviving-id" aria-expanded="false" data-toggle="collapse" href="#bib-sofiiuk2021reviving-id">BibTeX</a>
             </div>
             <pre class="collapse saic-pub-bibtex" id="bib-sofiiuk2021reviving-id">
                 @article{sofiiuk2021reviving,
@@ -61,9 +60,9 @@
             <span class="saic-pub-channel">Proc. of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), oral</span>
             <span class="saic-pub-year">2020</span>
             <div class="saic-pub-link-group">
-                <a class="saic-pub-link vunder-project-color" href="https://arxiv.org/abs/2001.10331">PDF</a>
-                <a class="saic-pub-link vunder-project-color" href="https://github.com/saic-vul/fbrs_interactive_segmentation">Code</a>
-                <a class="saic-pub-link vunder-project-color" aria-controls="bib-sofiiuk2020fbrs-id" aria-expanded="false" data-toggle="collapse" href="#bib-sofiiuk2020fbrs-id">BibTeX</a>
+                <a class="saic-pub-link saic-colored-text" href="https://arxiv.org/abs/2001.10331">PDF</a>
+                <a class="saic-pub-link saic-colored-text" href="https://github.com/saic-vul/fbrs_interactive_segmentation">Code</a>
+                <a class="saic-pub-link saic-colored-text" aria-controls="bib-sofiiuk2020fbrs-id" aria-expanded="false" data-toggle="collapse" href="#bib-sofiiuk2020fbrs-id">BibTeX</a>
             </div>
             <pre class="collapse saic-pub-bibtex" id="bib-sofiiuk2020fbrs-id">
                 @inproceedings{sofiiuk2020fbrs,
@@ -82,9 +81,9 @@
             <span class="saic-pub-channel">Proc. of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), oral</span>
             <span class="saic-pub-year">2019</span>
             <div class="saic-pub-link-group">
-                <a class="saic-pub-link vunder-project-color" href="https://arxiv.org/abs/1909.07829">PDF</a>
-                <a class="saic-pub-link vunder-project-color" href="https://github.com/saic-vul/adaptis">Code</a>
-                <a class="saic-pub-link vunder-project-color" aria-controls="bib-sofiiuk2019adaptis-id" aria-expanded="false" data-toggle="collapse" href="#bib-sofiiuk2019adaptis-id">BibTeX</a>
+                <a class="saic-pub-link saic-colored-text" href="https://arxiv.org/abs/1909.07829">PDF</a>
+                <a class="saic-pub-link saic-colored-text" href="https://github.com/saic-vul/adaptis">Code</a>
+                <a class="saic-pub-link saic-colored-text" aria-controls="bib-sofiiuk2019adaptis-id" aria-expanded="false" data-toggle="collapse" href="#bib-sofiiuk2019adaptis-id">BibTeX</a>
             </div>
             <pre class="collapse saic-pub-bibtex" id="bib-adaptis2019-id">
                 @inproceedings{sofiiuk2019adaptis,
@@ -98,7 +97,7 @@
         </div>
 
     </main>
-    <footer class="saic-footer vunder-background-color vunder-text-color">
+    <footer class="saic-footer">
         <img class="saic-footer-samsung" src="../../img/samsung_logo.png" alt="SAMSUNG">
         <p class="saic-footer-samsung-research">|</p> <p class="saic-footer-samsung-research">Samsung Research</p> <p class="saic-footer-samsung-research">|</p>
         <p class="saic-footer-lab">Vision Understanding Lab 2022 </p>
