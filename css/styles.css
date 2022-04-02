@@ -527,10 +527,20 @@ p.saic-project-title {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    height: 180px;
-    width: 180px;
+    height: 140px;
+    width: 140px;
 }
 
+@media (min-width: 768px) {
+    .saic-project-icon {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        height: 180px;
+        width: 180px;
+    }
+}
 
 #vunder-spatial-ai:hover {
     background: linear-gradient(45deg, #601DE4, #FF12AC);
